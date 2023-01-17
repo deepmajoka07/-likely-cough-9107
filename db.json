@@ -2,13 +2,18 @@
     "users": [
         {
             "id": 1,
-            "name": "Aman",
-            "Age": 25
+            "email": "admin@mountainwear.com",
+            "Password": "Admin@1212"
         },
         {
             "id": 2,
             "name": "deepak",
             "Age": 25
+        }
+    ],
+    "Orders" : [
+        {
+            "id" : 1
         }
     ],
     "AllProduct": [
