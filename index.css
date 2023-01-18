@@ -131,8 +131,8 @@ input[type=text]{
     cursor: pointer;
 }
 
-/********************************** menu  ********************************/
 
+/********************************** menu  ********************************/
 
 .menu-item:hover .drop-down-menu{
     display: block;
@@ -190,29 +190,18 @@ input[type=text]{
       border-bottom-color: #2B1A41;
       z-index: 0;
   }
-/* nav>a>h4 {
-    font-family: open helvetica ,Arial, sans-serif;
-    color: white;
-    float: left;
-    text-align: center;
-    font-weight: 400;
-    font-size: 15px;
-    padding: 15px;
-} */
 
 /*************************** best_in_show_imgage ********************************/
 
 .container {
     position: relative;
     text-align: center;
-    color: white;
-   
+    color: white;  
 }
 
 .container>img {
     width: 100%;
-    height: auto;
-   
+    height: auto;  
 }
 
 .bottom-left-text {
