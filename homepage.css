@@ -1,0 +1,423 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.top {
+    width: 100%;
+    height: 45px;
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-around;
+}
+
+#head{
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    z-index: 1;
+}
+
+   
+.top>div:nth-child(1) {
+    width: 100%;
+    height: auto;
+    background-color: green;
+}
+
+.top>div:nth-child(2) {
+    width: 100%;
+    height: auto;
+
+}
+
+.top-right i {
+    float: right;
+    padding: 10px 15px;
+    size: 10px;
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 90px;
+}
+
+.navbar>div:nth-child(1) {
+    width: 30%;
+    height: auto;
+    background-color: #007ab8;
+}
+
+.navbar>.logo>img{
+    margin: 10px;
+    width: 90%;
+    height: 100%;
+}
+
+.navbar>div:nth-child(2) {
+    width: 100%;
+    height: auto;
+    background-color:#000;
+
+}
+
+.navbar>div:nth-child(3) {
+    width: 50%;
+    height: auto;
+    background-color: blue;
+}
+
+nav>a>h4 {
+    font-family: open helvetica ,Arial, sans-serif;
+    color: white;
+    float: left;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+/*************************** best_in_show_imgage ********************************/
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+   
+}
+
+.container>img {
+    width: 100%;
+    height: auto;
+   
+}
+
+.bottom-left-text {
+    position: absolute;
+    top: 30%;
+    left: 4%;
+    color: white;
+    font-size: 45px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 2px;
+    letter-spacing: -.08rem;
+    text-shadow: 0px 0px 20px #446886;
+}
+
+.shop-img-btn {
+    position: absolute;
+    top: 50%;
+    left: 4%;
+    font-size: 12px;
+    font-weight: 700;
+    color: black;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-family: open sans, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
+    margin-top: 1rem;
+    border: none;
+    background-color: white;
+    font-style: bold;
+    cursor: pointer;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+/********************************* second div for sale adv   ********************/
+
+.sale {
+
+    width: 100%;
+    height: 110vh;
+    border: 2px solid #2185C5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sale-carousel {
+    width: 40%;
+    height: 70%;
+    border: 3px solid red;
+}
+
+/************************* .Get Ready For Winter
+*******************/
+
+.winter_collection {
+    width: 100%;
+    height: 100vh;
+    border: 2px solid red;
+}
+
+
+/*************************** Get Rewards on Every Purchase **********************/
+
+.adverties {
+    width: 100%;
+    height: 50vh;
+    border: 2px solid red;
+    text-align: center;
+}
+
+.adverties>img {
+    margin-top: 3%;
+    width: 20%;
+    height: 12%;
+}
+
+.adverties>h2 {
+    font-size: 2.5rem;
+    font-family: bold, sans-serif;
+
+}
+
+.adverties>p {
+    font-family: Arial, sans-serif;
+    font-size: .875rem;
+    font-weight: 400;
+}
+
+.adverties button {
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+/***************************************** Need The Right Jacket ************************************/
+.jacket {
+    margin: auto;
+    margin-top: 40px;
+    width: 100%;
+    height: 80vh;
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jacket img {
+    width: 90%;
+    height: 100%;
+    border: 3px solid red;
+}
+
+.right-jacket {
+    width: 100%;
+    height: 60vh;
+    border: 2px solid red;
+    text-align: center;
+}
+.right-jacket>h2 {
+    font-size: 2.5rem;
+    font-family: bold, sans-serif;
+
+}
+
+.right-jacket>p {
+    font-family: Arial, sans-serif;
+    font-size: .875rem;
+    font-weight: 400;
+}
+
+.right-jacket button {
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+
+/*********************** Featured Favorites  ********************************/
+
+.title, .play{
+    font-size: 1.5rem;
+    font-family: bold, sans-serif;
+}
+
+.favorites{
+    width: 90%;
+    height: auto;
+    margin-left: auto;
+    align-items: center;
+    border: 3px solid red;
+    margin: 15px auto;
+}
+
+.featured-favorites-container>img{
+    width: 100%;
+}
+
+.featured-favorites-container,.men, .women {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.cold {
+    position: absolute;
+    top: 85%;
+    left: 2%;
+    color: white;
+    font-size: 22px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 2px;
+    letter-spacing: -.08rem;
+    text-shadow: 0px 0px 20px #446886;
+}
+#cold{
+     position: absolute;
+     top: 90%;
+    left: 2%;
+     color: white;
+     border-bottom: 1px solid white;
+     font-family: sans-serif;
+     font-size: 15px;
+}
+
+.men-women{
+   width: 90%;
+    height: 80vh;
+    margin-left: auto;
+    align-items: center;
+    border: 3px solid red;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.men-women img{
+    width: 100%;
+    height: 100%;
+}
+.men-women>.men{
+    width: 100%;
+    height: 100%;
+}
+.men-women>.women{
+    width: 100%;
+    height: 100%;
+}
+#link{
+    position: absolute;
+    top: 90%;
+   left: 2%;
+    color: white;
+    border-bottom: 1px solid white;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+/******************************************** How Do You Play? *****************************************/
+
+.play{
+    width: 90%;
+    height: 70vh;
+    margin: auto;
+    margin-top: 10%;
+    border: 3px solid red;
+}
+.play-img>div>img{
+    width: 100%;
+    height: 100%;
+}
+.play-img{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    border: 2px solid green;
+}
+.play-img>div:nth-child(1){
+   width: 100%;
+   height: 100%;
+    border: 2px solid firebrick;
+}
+.fishing, .hiking, .hunting, .skisnow{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.fishing h3, .hiking h3, .hunting h3, .skisnow h3{
+    position: absolute;
+    top: 80%;
+    left: 6%;
+    color: white;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.play-img>div:nth-child(2){
+    width: 100%;
+    height: 100%;
+    border: 2px solid firebrick;
+}
+/* .hiking{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.hiking h3{
+    position: absolute;
+    top: 80%;
+    left: 2%;
+    color: white;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 600;
+} */
+.play-img>div:nth-child(3){
+    width: 100%;
+    height: 100%;
+    border: 2px solid firebrick;
+}
+.play-img>div:nth-child(4){
+    width: 100%;
+    height: 100%;
+    border: 2px solid firebrick;
+}
+
+/* ******************“Nature. The world’s largest playground.”
+  ********************************/
+
+  .nature-div{
+    width: 90%;
+    height: 79vh;
+    margin: auto;
+    align-items: center;
+    border: 2px solid green;
+  }
+  .nature{
+    margin: 25vh;
+    font-size: 3rem;
+    font-family: bold,sans-serif;
+    color: #0085ca;
+    text-align: center;
+    font-weight: 700;
+    border: 2px solid red;
+  }
+  .name{
+    margin-top: -150px;
+    text-align: center;
+    border: 2px solid red;
+  }
+  .name>p{
+    font-family: bold,sans-serif;
+  }
+  .founder{
+    font-size: 12px;
+    font-weight: 700;
+    font-family: bold,sans-serif;
+  }
