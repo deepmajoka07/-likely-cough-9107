@@ -22,13 +22,39 @@ body {
 .top>div:nth-child(1) {
     width: 100%;
     height: auto;
-    background-color: green;
+    background-color: white;
+}
+
+.top-left{
+    display: flex;
+    align-items: center;
+    padding: 0px 100px;
+}
+
+.top-left i{
+    position: relative;
+  display: inline-block;
+}
+.badge{
+    position: absolute;
+    top: 5px;
+    left: 7.9rem;
+    padding: 2px 6px;
+    border-radius: 50%;
+    background-color:#007ab8;
+    color: white;
+}
+.top-left>h4,i{
+    color: #3e3d3d;
+    padding: 10px;
+    font-size: 15px;
+    font-family: sans-serif;
 }
 
 .top>div:nth-child(2) {
     width: 100%;
     height: auto;
-
+    background-color: white;
 }
 
 .top-right i {
@@ -60,25 +86,119 @@ body {
 .navbar>div:nth-child(2) {
     width: 100%;
     height: auto;
-    background-color:#000;
+    background-color:#333;
 
 }
+
 
 .navbar>div:nth-child(3) {
     width: 50%;
     height: auto;
-    background-color: blue;
+    background-color:#333;
 }
 
-nav>a>h4 {
+.searchbar>.search-input{
+    width: 60%;
+    margin: 20px 120px;
+    border: 1px solid white;
+}
+
+input[type=text]{
+    width: 80%;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-family: open helvetica ,Arial, sans-serif;
+    padding: 14px 20px;
+    display: inline-block;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    background-color:#333;
+
+}
+::placeholder{
+    color: rgb(230, 216, 216);
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-family: open helvetica ,Arial, sans-serif;
+}
+.search-input>i{
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+/********************************** menu  ********************************/
+
+
+.menu-item:hover .drop-down-menu{
+    display: block;
+  }
+
+  .menu-item{
+    cursor: pointer;
+    height: 50px;
+    display: inline-block;
+    position: relative;
+    color: white;
+  }
+
+  .menu-item:first-child span{
+    border:none;
+  }
+  .menu-item span{
+    border-left: 1px solid black;
+    padding: 0 10px;
+  }
+
+  .drop-down-menu{
+    display: none;
+    width: 100px;
+    position: absolute;
+    background: white;
+    border: 1px solid #301B46;
+    padding: 20px;
+    top: 40px;
+    left: 0px;
+  }
+
+  .drop-down-menu:before {
+    content: "";
+    position: absolute;
+    border-color: rgba(194, 225, 245, 0);
+    border: solid transparent;
+    border-bottom-color: white;
+    border-width: 11px;
+    margin-left: -10px;
+    top: -21px;
+    right: 65px;
+    z-index: 1;
+  } 
+  
+  .drop-down-menu:after {
+      content: "";
+      position: absolute;
+      right: 66px;
+      top: -21px;
+      width: 0;
+      height: 0;
+      border: solid transparent;
+      border-width: 10px;
+      border-bottom-color: #2B1A41;
+      z-index: 0;
+  }
+/* nav>a>h4 {
     font-family: open helvetica ,Arial, sans-serif;
     color: white;
     float: left;
     text-align: center;
     font-weight: 400;
-    font-size: 1rem;
-    padding: 10px;
-}
+    font-size: 15px;
+    padding: 15px;
+} */
 
 /*************************** best_in_show_imgage ********************************/
 
@@ -421,3 +541,173 @@ nav>a>h4 {
     font-weight: 700;
     font-family: bold,sans-serif;
   }
+
+  /************************************* Explore Best Sellers   **********************************/
+  .explore{
+    width: 90%;
+    height: 80vh;
+    margin: auto;
+    background-color: #446886;
+  }
+
+  /************************************* See you out there. *****************************/
+  .planet{
+    width: 100%;
+    height: 80%;
+  }
+  .planet>img{
+    width: 100%;
+    height: 80%;
+  }
+
+  /************************************* contact section *****************************/
+  .contact{
+    width: 98%;
+    height: 35vh;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    border: 2px solid red;
+  }
+  .contact>.contact-care, .customer-care, .git, .store{
+    width: 100%;
+    height: auto;
+    font-family: sans-serif;
+    letter-spacing: .5px;
+    text-align: center;
+    margin: 10px;
+    border: 2px solid red;
+  }
+
+  /************************************* footer  ***********************************/
+
+  footer{
+    width: 99%;
+    height: auto;
+    background-color: #333;
+    
+  }
+  .footer-top{
+    width: 100%;
+    height: 30vh;
+    text-align: center;
+    border: 2px solid red;
+  }
+  .footer-top>img{
+    margin-top: 3%;
+  }
+  .join{
+    color: white;
+    font-size: .875rem;
+    font-weight: bold;
+    font-family: sans-serif;
+  }
+  .footer-top>p{
+    color: #fff;
+    font-family: sans-serif;
+    font-size: .875rem;
+    letter-spacing: 0.9px;
+  }
+  .grid-footer{
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    border: 2px solid blue;
+  }
+  .grid-footer>div:nth-child(1){
+    width: 60%;
+    height: auto;
+    border: 2px solid red;
+    color: white;
+  }
+  .grid-footer>div:nth-child(2){
+    width: 60%;
+    height: auto;
+    border: 2px solid red;
+    color: white;
+  }
+  .grid-footer>div:nth-child(3){
+    width: 100%;
+    height: auto;
+    border: 2px solid red;
+    color: white;
+  }
+
+  .aboutus>ul li, .shop>ul li{
+    color: #fff;
+    list-style: none;
+    font-family: sans-serif;
+    font-size: .875rem;
+    line-height: 2rem;
+    cursor: pointer;
+  }
+
+  .connectus>p{
+    color: #fff;
+    margin: 20px 40px;
+    font-family: sans-serif;
+  }
+  .email-container{
+    width: 90%;
+    height: 10%;
+    margin: auto;
+    background-color: #fff;
+    text-align: center;
+  }
+
+  .email-container>.email-input{
+    background-color: white;
+}
+
+.email-input>i{
+    padding: 15px 10px;
+    color: black;
+    cursor: pointer;
+}
+.email-input>a{
+    padding: 10px 17px;
+    font-size: 36px;
+    background-color: #eaebed;
+}
+
+.email-input>input[type=text]{
+    width: 75%;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-family: open helvetica ,Arial, sans-serif;
+    padding: 14px 20px;
+    display: inline-block;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    background-color:white;
+
+}
+.email-input>::placeholder{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+.social-media-icon{
+    width: 60%;
+    height: auto;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    border: 2px solid red;
+    color: white;
+}
+
+.social-media-icon>i{
+    color: white;
+    font-size: 20px;
+}
+a{
+    color: white;
+}
