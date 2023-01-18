@@ -4,7 +4,7 @@ let Pants = document.getElementById("Pants")
 let Boots = document.getElementById("Boots")
 let Other_Filter = document.getElementById("Other_Filter")
 let GenderFilter = document.getElementsByClassName("gender");
-
+let product = JSON.parse(localStorage.getItem("product"))||[]
 let AllProduct = [];
 let filter_data = [];
 
@@ -132,7 +132,14 @@ function showProduct(data) {
         let rate = document.createElement("span")
         rate.innerText = `(${element.rating})`
         
-       
+    div.addEventListener("click",()=>{
+        product = [element];
+        localStorage.setItem("product",JSON.stringify(product));
+        setTimeout(()=>{
+            window.location.href = "./details.html"
+        },1000)
+    })
+
         div.addEventListener("mouseenter", () => {
             img.setAttribute("src", element.image_2);
             shopBtn.style.display = "block"

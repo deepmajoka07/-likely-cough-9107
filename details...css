@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    min-height: 110px;
+    position: sticky;
+    top: 0;
+    background: rgb(255, 255, 255, 1);
+    border: 1px solid red;
+    z-index: 10;
+}
+
+.activty {
+    font-family: gert bold, sans-serif;
+    margin-top: 15px;
+    margin-left: 14.8%;
+}
+
+.activty>a {
+    text-decoration: none;
+}
+
+.material-symbols-outlined {
+    display: inline-block;
+    vertical-align: middle;
+    /* background-color: black; */
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 200,
+        'GRAD' 0,
+        'opsz' 48
+}
+
+.product {
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+
+#image {
+    width: 50%;
+    min-height: 50vh;
+    border: 1px solid black;
+}
+.imgDiv{
+    padding: 4%;
+    width: 80%;
+    margin: auto;
+}
+.imgDiv>img{
+    
+    width: 100%;
+}
+
+#image>div>div:last-child {
+    margin: auto;
+    width: 80%;
+    /* margin-top: 5%; */
+    display: flex;
+    /* grid-template-columns: repeat(6,1fr); */
+    justify-content: space-evenly;
+    /* border: 1px solid red; */
+}
+
+#image>div>div:last-child>img {
+    width: 8%;
+    /* border: 1px solid black; */
+}
+
+#details {
+    width: 50%;
+    min-height: 50vh;
+    border: 1px solid black;
+}
