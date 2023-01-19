@@ -1,30 +1,24 @@
 
 let baseURL = " https://colambia-api.onrender.com";
 
-let product = 0;
-let users = 0;
-let order = 0;
+let product = fetchData("AllProduct");
+let users = fetchData("users");
+let order = fetchData("Orders");
+console.log(product)
 
-fetchData("AllProduct")
-fetchData("users")
-fetchData("Orders")
-setTimeout(() => {
-    console.log(product)
-    showGraph()
-}, 2000)
 
-function fetchData(Query) {
-   
-    fetch(`${baseURL}/${Query}`)
-        .then((Response) => {
-            return Response.json()
-        })
-        .then((data) => {
-            console.log(data);
-            Query == "AllProduct" ? product = data.length :Query == "users" ? users = data.length :order = data.length ;
-            
-        })
 
+
+showGraph()
+
+
+async function fetchData(Query) {
+
+    let Response = await fetch(`${baseURL}/${Query}`)
+    let data = await Response.json
+    // Query == "AllProduct" ? product = data.length : Query == "users" ? users = data.length : order = data.length;
+    // console.log(product)
+    return data.length
 }
 
 
@@ -39,9 +33,9 @@ function showGraph() {
     function drawChart() {
         var data = google.visualization.arrayToDataTable([
             ['Contry', 'Mhl'],
-            ['Product',product ],
-            ['Users',users ],
-            ['Order',order ]
+            ['Product', product],
+            ['Users', users],
+            ['Order', order]
             // ,
             // ['USA', 0],
             // ['Argentina', 1]
