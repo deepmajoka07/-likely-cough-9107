@@ -193,106 +193,91 @@ input[type=text]{
       border-width: 10px;
       border-bottom-color: #2B1A41;
       z-index: 0;
-  }
+    }
 
   /**********************************Navigation part done  ********************************/
-#banner-video{
+
+.kid-sale{
     width: 100%;
-    height: 100vh;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 150px;
+    background-color: rgb(154, 34, 58);
+    text-align: center;
+    letter-spacing: 0px;
+    word-spacing: -3px;
+    line-height:  1.5;
 }
-
-.vid_content{
-   padding-right: 700px;
-    line-height: 3.5;
-}
-.vid_content h1{
-    font-size: 70px;
+.kid-sale h1{
+    font-size: 30px;
     font-weight: 800;
-    line-height: .9;
+    padding-top: 20px;
+    color: #fff;
+    word-spacing: -5px;
+}
+.kid-sale strong{
+    
+    font-size: 20px;
+    font-weight: 800;
     color: #fff;
 }
-.vid_content p{
+.kid-sale p{
     color: #fff;
-    letter-spacing: 1px;
-
 }
-.vid_content a{
-    text-decoration: none;
-    border: 1px;
-    background-color: #fff;
-    color: #000;
-    letter-spacing: 1px;
-    font-size: 12px;
-    font-weight: 550;
-    padding: 10px 50px 10px 50px;
+.kid-sale a{
+    color: #fff;
+    
 }
 
-.vid_content a:hover {
-    background-color: rgb(199, 196, 196);
-}
 
- .video-bgMen{
+
+#banner-img-kid{
+    width: 100%;
+    position: relative;
+    padding-bottom: 200px;
+    
+ }
+ #banner-img-kid img{
+    width: 100%;
+    display: block;
+    margin: auto;
     position: absolute;
-   top: 0;
-   bottom: 0;
-   
     z-index: -1;
-}
-@media (min-aspect-ratio: 16/9){
-    .video-bgMen{
-        width: 100%;
-        height: auto;
-    }
-}
-@media (max-aspect-ratio: 16/9){
-    .video-bgMen{
-        width: auto;
-        height: 100%;
-    }
-}
-/* Video banner work done here */
-
-.men-sale{
-   
-   display: block;
-   margin: 70px 50px;
-   margin-left: auto;
-   margin-right: auto;
-   text-align: center;
-    line-height: 2;  
-}
-
-.men-sale h1{
-    font-size: 40px;
-    font-weight: 800; 
-    letter-spacing: -1px;
-    padding-bottom: 10px;
-}
-.men-sale p{
-    letter-spacing: 1;
-    font-weight: 100;
-    margin-bottom: 15px;
-}
-.men-sale a {
-    text-decoration: none;
-    border: 1px;
-    background-color: #000;
-    color: #fff;
-    font-size: 12px;
-    font-weight: 550;
-    letter-spacing: 1px;
-    padding: 10px 50px 10px 50px;
-}
-
-.men-sale a:hover{
+ }
+ .img_content{
+    width: 90%;
+     line-height: 1.5;
+     margin-left: 70px;
+     padding-top: 160px;
+ }
+ .img_content h1{
+     font-size: 50px;
+     font-weight: 800;
+     line-height: .9;
+     margin-bottom: 20px;
+     color: #000;
+ }
+ .img_content p{
+     color: #000;
+     letter-spacing: 1px;
+     margin-bottom: 20px;
+ 
+ }
+ .img_content a{
+     text-decoration: none;
+     border: 1px;
+     background-color: #000;
+     color: #fff;
+     letter-spacing: 1px;
+     font-size: 12px;
+     font-weight: 550;
+     padding: 12px 18px 12px 18px;
+ }
+ 
+ .img_content a:hover {
     background-color: rgb(37, 35, 35);
-}
+ } 
 
-/* Sales part done */
+/* Banner woek done */
+
 
 
 .main-carousel{
@@ -394,9 +379,10 @@ input[type=text]{
     font-weight: 800; 
     letter-spacing: 1px;
     padding-bottom: 10px;
+    color: #fff;
  }
  .fresh a{
-    color: #000;
+    color: #fff;
     font-weight: lighter;
  }
 /* large image part done */
@@ -423,16 +409,16 @@ input[type=text]{
 
 }
 .tough{
-    margin-top: 460px;
-    margin-left: 20px;
+    margin-top: 450px;
+    margin-left: 30px;
 }
 .tough h2{
-    color: #fff;
+    color: rgb(255, 255, 255);
     font-weight: 800;
     
 }
 .tough a{
-    color: #fff;
+    color: rgb(255, 255, 255);
     letter-spacing: 2;
     font-size: medium;
     line-height: 1.7;
@@ -460,13 +446,13 @@ input[type=text]{
     margin-left: 25px;
 }
 .right_jacket h2{
-    color: #000;
+    color: #fff;
     font-weight: 800;
     font-size: x-large;
     
 }
 .right_jacket a{
-    color: #000;
+    color: #fff;
     letter-spacing: 2;
     font-size: medium;
     line-height: 1.7;
@@ -493,14 +479,14 @@ input[type=text]{
 .round-wording h2{
 
     color: #000;
-    font-weight: 800;
-    font-size: 21px;
+    font-weight: 700;
+    font-size: 20px;
     margin: 20px;
 }
 .round-wording h1{
     color: #000;
     font-size: 30px;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 1.3;
     letter-spacing: 0px;
     margin-bottom: 30px;
