@@ -194,7 +194,7 @@ input[type=text]{
     color: black;
     padding: 10px 20px;
     text-transform: uppercase;
-    font-family: open sans, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
+    font-family: open  helvetica, Arial, sans-serif;
     margin-top: 1rem;
     border: none;
     background-color: white;
@@ -249,11 +249,11 @@ input[type=text]{
 }
 /***************************** .Get Ready For Winter************************************************/
 .container {
-  width: 100%;
+  width: 98%;
   height: 550px;
   position: relative;
   overflow: hidden;
-  
+  margin: auto;
 }
 .container>h2{
   font-size: 1.4rem;

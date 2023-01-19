@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+}
+
+.top {
+    width: 100%;
+    height: 45px;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-around;
+}
+
+#head{
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    z-index: 1;
+}
+
+   
+.top>div:nth-child(1) {
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+.top-left{
+    display: flex;
+    align-items: center;
+    padding: 0px 100px;
+}
+
+.top-left i{
+    position: relative;
+  display: inline-block;
+}
+.badge{
+    position: absolute;
+    top: 5px;
+    left: 7.9rem;
+    padding: 2px 6px;
+    border-radius: 50%;
+    background-color:#007ab8;
+    color: white;
+}
+.top-left>h4,i{
+    color: #3e3d3d;
+    padding: 10px;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+.top>div:nth-child(2) {
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+.top-right i {
+    float: right;
+    padding: 10px 15px;
+    size: 10px;
+    cursor: pointer;
+}
+.top-right i:hover{
+  background-color:  #3e3d3d;
+  color: white;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 90px;
+}
+
+.navbar>div:nth-child(1) {
+    width: 30%;
+    height: auto;
+    background-color: #007ab8;
+}
+
+.navbar>.logo>img{
+    margin: 10px;
+    width: 90%;
+    height: 100%;
+}
+
+.navbar>div:nth-child(2) {
+    width: 100%;
+    height: auto;
+    background-color:#333;
+
+}
+
+
+.navbar>div:nth-child(3) {
+    width: 50%;
+    height: auto;
+    background-color:#333;
+}
+
+.searchbar>.search-input{
+    width: 60%;
+    height: auto;
+    margin: 20px 120px;
+    border: 1px solid white;
+}
+
+input[type=text]{
+    width: 80%;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-family: open helvetica ,Arial, sans-serif;
+    padding: 14px 20px;
+    display: inline-block;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    background-color:#333;
+
+}
+::placeholder{
+    color: rgb(230, 216, 216);
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-family: open helvetica ,Arial, sans-serif;
+}
+.search-input>i{
+    padding: 5%;
+    color: white;
+    cursor: pointer;
+}
+
+
+/********************************** menu  ********************************/
+
+.menu-item:hover .drop-down-menu{
+    display: block;
+  }
+
+  .menu-item>a{
+    float: left;
+    cursor: pointer;
+    position: relative;
+    color: white;
+    padding: 35px 20px;
+    font-family: sans-serif;
+    font-size: 15px;
+    letter-spacing: .5px;
+    text-decoration: none;
+    /* border: 2px solid red; */
+  }
+
+
+
+
+/*************************** best_in_show_imgage ********************************/
+
+.snow-container {
+    position: relative;
+    text-align: center;
+    color: white;  
+}
+
+.snow-container>img {
+    width: 100%;
+    height: auto;  
+}
+
+.bottom-left-text {
+    position: absolute;
+    top: 30%;
+    left: 4%;
+    color: white;
+    font-size: 45px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 2px;
+    letter-spacing: -.08rem;
+    text-shadow: 0px 0px 20px #446886;
+}
+
+.shop-img-btn {
+    position: absolute;
+    top: 50%;
+    left: 4%;
+    font-size: 12px;
+    font-weight: 700;
+    color: black;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-family: open  helvetica, Arial, sans-serif;
+    margin-top: 1rem;
+    border: none;
+    background-color: white;
+    font-style: bold;
+    cursor: pointer;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+    </style>
+</head>
+<body>
+    <div id="head">
+        <div class="top">
+            <div class="top-left">
+                <i class="fa-solid fa-tag" style="font-size: 25px;"></i>
+                <span class="badge">4</span>
+                <h4> Get Free Shipping & Rewards</h4>
+                <i class="fa-solid fa-angle-down"></i>
+
+            </div>
+            <div class="top-right">
+                <i class="fa-solid fa-cart-shopping" style="font-size: 22px;"></i>
+                <i class="fa-solid fa-circle-user" style="font-size: 22px;"></i>
+                <i class="fa-solid fa-location-dot" style="font-size: 22px;"></i>
+                <i class="fa-solid fa-circle-question" style="font-size: 22px;"></i>
+            </div>
+        </div>
+
+        <!------------------------------------- navigation bar  ------------------------------------------>
+        <div class="navbar">
+            <div class="logo">
+                <img src="./logo.png" alt="">
+            </div>
+            <div>
+                <div id="menu">
+                    <div class="menu">
+                        <div class="menu-item">
+                            <a href="">Men</a>
+                        </div>
+
+                        <div class="menu-item">
+                            <a href="">Women</a>
+                        </div>
+
+                        <div class="menu-item">
+                            <a href="">Kids</a>
+                        </div>
+
+                        <div class="menu-item">
+                            <a href="">Footwear</a>
+                        </div>
+
+                        <div class="menu-item">
+                            <a href="">Activity</a>
+                        </div>
+
+                        <div class="menu-item">
+                            <a href="">Featured</a>
+                        </div>
+
+                        <div class="menu-item">
+                            <a href="">Winter Sale</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="searchbar">
+                <div class="search-input">
+                    <input type="text" name="" placeholder="Search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
