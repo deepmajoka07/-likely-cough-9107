@@ -257,6 +257,7 @@ function showDetails(data) {
         if (Sizevalue == null) {
             sizeError.innerText = "Select Size";
         } else {
+            
             data.size = Sizevalue
             let unique = true;
             Cartdata.forEach((el) => {
