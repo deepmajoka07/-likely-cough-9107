@@ -112,12 +112,11 @@ function showDetails(data) {
     let std = document.createElement("a");
     std.innerText = "Standerd";
     std.setAttribute("id","std")
-    std.setAttribute("href","#std")
+   
 
     let big = document.createElement("a");
     big.innerText = "Big";
     big.setAttribute("id","big")
-    big.setAttribute("href","#big")
     quality.append(std,big);
 
     let box2 = document.createElement("div");
