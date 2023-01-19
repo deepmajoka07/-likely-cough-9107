@@ -42,7 +42,7 @@ nav {
 #image {
     width: 50%;
     min-height: 50vh;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 .imgDiv{
     padding: 4%;
@@ -71,6 +71,91 @@ nav {
 
 #details {
     width: 50%;
+    padding: 3%;
     min-height: 50vh;
+    /* border: 1px solid black; */
+}
+
+#details>div>h2,#details>div>div{
+    margin: 2% 0;
+}
+
+#details>div>span{
+    margin-bottom: 2%;
+}
+.priceContainer{
+    display: flex;
+    justify-content: space-between;
+}
+.quality{
+    margin: 2% 0;
+    display: flex;
+    justify-content: space-between;
+}
+.quality>a{
     border: 1px solid black;
+    margin: 2% 0;
+    padding: 1% 20%;text-decoration: none;
+    color: black;
+}
+
+.quality>a:first-child{
+    background-color: black;
+    color: white;
+}
+
+.colorBox>span{
+    min-height: 20px;
+    min-width: 20px;
+    margin: 5px;
+    border-radius: 50%;
+    background-color: #c80024;
+    border: 1px solid white;
+    display: inline-block;
+}
+
+.colorBox>span:nth-child(2) {
+    background-color: #1c2438;
+}
+
+.colorBox>span:nth-child(3) {
+    background-color: #212023;
+}
+
+.colorBox>span:nth-child(4) {
+    background-color: #666165;
+}
+
+.sizeBox{
+    margin: 2% 0;
+}
+.sizeError{
+    color: red;
+}
+.sizeBox>a{
+    border: 1px solid black;
+    padding: 1% 2%;
+    margin: 1% 1.5%;
+    text-decoration: none;
+    color: black;
+}
+
+.sizeBox>a:target{
+    background-color: black;
+    color: white;
+}
+
+#details>div>button{
+    width: 100%;
+    margin:4% 0 12% 0;
+    padding: 2% 0;
+    background-color: aqua;
+    color: white;
+    border: none;
+    font-weight: bolder;
+
+}
+
+#details>div>h3{
+    margin: 3% 0;
 }
