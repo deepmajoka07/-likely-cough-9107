@@ -257,7 +257,6 @@ function showDetails(data) {
         if (Sizevalue == null) {
             sizeError.innerText = "Select Size";
         } else {
-            
             data.size = Sizevalue
             let unique = true;
             Cartdata.forEach((el) => {
@@ -274,6 +273,5 @@ function showDetails(data) {
             localStorage.setItem("cartData", JSON.stringify(Cartdata));
             window.location.href = "cart.html";
         }
-        console.log(1)
     })
 }
