@@ -42,9 +42,6 @@ function showGraph() {
             ['Product',product ],
             ['Users',users ],
             ['Order',order ]
-            // ,
-            // ['USA', 0],
-            // ['Argentina', 1]
         ]);
 
         var options = {

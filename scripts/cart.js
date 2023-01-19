@@ -5,7 +5,14 @@ let container = document.getElementById('container')
 let quantity = document.getElementById('quantity')
 let subTotal = document.getElementById('subtotalforsummry')
 let totalEst = document.getElementById('totalestimate')
+let guestcheckout = document.getElementById('guestcheckout');
 
+guestcheckout.addEventListener("click",()=>{
+    if(cartData.length){
+        window.location.href = "./checkout.html"
+    }
+    alert("Cart is Empty")
+})
 
 // giving functionallity part
 
@@ -34,7 +41,7 @@ function RenderData(cartData) {
         <div class="main_container">
     
         <div id="image" style="height: 99%;width: 95%;">
-            <img src=${element.image}
+            <img src=${element.image_1}
                 alt="" style="height: 100%;width: 100%;">
         </div>
     

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link data-require="fontawesome@5.5.0" data-semver="5.5.0" rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" />
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./styles/index.css">
     
 
     <title>Colombia</title>
@@ -26,8 +26,8 @@
 
             </div>
             <div class="top-right">
-                <i class="fa-solid fa-cart-shopping" style="font-size: 22px;"></i>
-                <i class="fa-solid fa-circle-user" style="font-size: 22px;"></i>
+                <i class="fa-solid fa-cart-shopping" id="cartPage" style="font-size: 22px;"></i>
+                <i class="fa-solid fa-circle-user" id="signin" style="font-size: 22px;"></i>
                 <i class="fa-solid fa-location-dot" style="font-size: 22px;"></i>
                 <i class="fa-solid fa-circle-question" style="font-size: 22px;"></i>
             </div>
@@ -36,37 +36,37 @@
         <!------------------------------------- navigation bar  ------------------------------------------>
         <div class="navbar">
             <div class="logo">
-                <img src="./logo.png" alt="">
+                <img src="./images/logo.png" alt="">
             </div>
             <div>
                 <div id="menu">
                     <div class="menu">
                         <div class="menu-item">
-                            <a href="">Men</a>
+                            <a href="./men.html">Men</a>
                         </div>
 
                         <div class="menu-item">
-                            <a href="">Women</a>
+                            <a href="./women.html">Women</a>
                         </div>
 
                         <div class="menu-item">
-                            <a href="">Kids</a>
+                            <a href="./kids.html">Kids</a>
                         </div>
 
                         <div class="menu-item">
-                            <a href="">Footwear</a>
+                            <a href="#">Footwear</a>
                         </div>
 
                         <div class="menu-item">
-                            <a href="">Activity</a>
+                            <a href="#">Activity</a>
                         </div>
 
                         <div class="menu-item">
-                            <a href="">Featured</a>
+                            <a href="#">Featured</a>
                         </div>
 
                         <div class="menu-item">
-                            <a href="">Winter Sale</a>
+                            <a href="#">Winter Sale</a>
                         </div>
 
                     </div>
@@ -83,11 +83,11 @@
 
     <!------------------------------------- dashboard start ------------------------------------------->
     <div class="snow-container">
-        <img src="./best snow.webp" alt="">
+        <img src="./best snow.webp" onclick="productPage()" alt="">
         <div class="bottom-left-text">
             <h1>best in snow</h1>
         </div><br>
-        <button class="shop-img-btn">shop ski & snow <i class="fa-solid fa-angle-right"></i></button>
+        <button class="shop-img-btn" onclick = "productPage()">shop ski & snow <i class="fa-solid fa-angle-right"></i></button>
     </div>
 
 
@@ -173,8 +173,8 @@
           </li>
 
         </ul>
-        <a href="#" id="prev"><i class="fas fa-angle-left"></i></a>
-        <a href="#" id="next"><i class="fas fa-angle-right"></i></a>
+        <a  id="prev"><i class="fas fa-angle-left"></i></a>
+        <a  id="next"><i class="fas fa-angle-right"></i></a>
         
       </div>
 
@@ -292,7 +292,7 @@
 
 <!------------------------------------------- See you out there.  -------------------------------------->
 <div class="planet">
-    <img src="Earth.png" alt="">
+    <img src="./images/Earth.png" alt="">
     <div class="see-you">See you out there.</div>
     <div class="grid-template">
         <div>
@@ -418,5 +418,5 @@
 </body>
 </html>
 
-<script src="homepage.js">
+<script src="./scripts/homepage.js">
 </script>

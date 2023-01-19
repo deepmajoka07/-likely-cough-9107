@@ -73,7 +73,7 @@
     text-align: center;
     margin-top: 2%;
     margin-bottom: 5%;
-    border-bottom: 2px solid black;
+    /* border-bottom: 2px solid black; */
 }
 
 .month_Chart {
@@ -91,4 +91,5 @@
 #myChart>div>div{
     overflow: hidden;
     border-radius: 2%;
+    background-color: rgb(230, 230, 230);
 }

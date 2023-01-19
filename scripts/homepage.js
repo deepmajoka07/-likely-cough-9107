@@ -1,4 +1,21 @@
 
+
+let signin = document.getElementById("signin");
+let cartPage = document.getElementById("cartPage");
+
+
+signin.addEventListener("click",()=>{
+  window.location.href = "./Signup.html"
+})
+
+cartPage.addEventListener("click",()=>{
+  window.location.href = "./cart.html"
+})
+
+function productPage(){
+    window.location.href = "./product.html"
+}
+
 function responsiveSlider() {
     const slider = document.querySelector('.container');
     let sliderWidth = slider.offsetWidth / 3;

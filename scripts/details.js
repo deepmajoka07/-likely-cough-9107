@@ -267,6 +267,7 @@ function showDetails(data) {
             })
             if (unique) {
                 Cartdata.push(data);
+                window.location.href = "./cart.html"
             } else {
                 alert("Already in cart")
             }
