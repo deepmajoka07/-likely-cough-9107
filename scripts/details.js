@@ -2,13 +2,28 @@ let G_Detail = document.getElementById("G_Detail");
 let Category_d = document.getElementById("Category_d");
 let Prod_image = document.getElementById("image");
 let Prod_details = document.getElementById("details");
+let LogoImg = document.getElementById("LogoImg");
 let data = JSON.parse(localStorage.getItem("product")) || [];
 let Cartdata = JSON.parse(localStorage.getItem("cartData")) || [];
+let signin = document.getElementById("signin");
+let cartPage = document.getElementById("cartPage");
 
+
+signin.addEventListener("click",()=>{
+  window.location.href = "./Signup.html"
+})
+
+cartPage.addEventListener("click",()=>{
+  window.location.href = "./cart.html"
+})
 Category_d.innerText = data[0].Category;
 G_Detail.innerText = data[0].Gender;
 showImag(data[0]);
 showDetails(data[0]);
+
+LogoImg.addEventListener("click",()=>{
+window.location.href = "./index.html"
+})
 
 function showImag(data) {
     Prod_image.innerHTML = null;
