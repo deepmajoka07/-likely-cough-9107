@@ -53,6 +53,10 @@ margin-left: 67%;
 
 }
 
+.main_container{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
 /* ----------------bttom of top--------------- */
 #topDiv{
     height: 140px;
@@ -241,4 +245,18 @@ margin-left: 40%;
     color: white;
     font-weight: bolder;
     margin: auto;
+}
+
+.notification{
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 45%;
+    width: 17%;
+    font-size: 23px;
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+    background: rgba(0,0,0,0.8);
+    color: white;
 }

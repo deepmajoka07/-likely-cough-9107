@@ -7,6 +7,8 @@ let data = JSON.parse(localStorage.getItem("product")) || [];
 let Cartdata = JSON.parse(localStorage.getItem("cartData")) || [];
 let signin = document.getElementById("signin");
 let cartPage = document.getElementById("cartPage");
+let added = document.getElementById("added");
+let already = document.getElementById("already");
 
 
 signin.addEventListener("click",()=>{
@@ -183,38 +185,38 @@ function showDetails(data) {
         let S = document.createElement("a");
         S.innerText = "S";
         S.setAttribute("id", "S")
-        S.setAttribute("href", "#S")
+        // S.setAttribute("href", "#S")
         S.setAttribute("class", "size");
 
         let M = document.createElement("a");
         M.innerText = "M";
         M.setAttribute("id", "M")
-        M.setAttribute("href", "#M")
+        // M.setAttribute("href", "#M")
         M.setAttribute("class", "size");
 
         let L = document.createElement("a");
         L.innerText = "L";
         L.setAttribute("id", "L")
-        L.setAttribute("href", "#L")
+        // L.setAttribute("href", "#L")
         L.setAttribute("class", "size");
         box4.append(S, M, L)
     } else {
         let S = document.createElement("a");
         S.innerText = "7";
         S.setAttribute("id", "S")
-        S.setAttribute("href", "#S")
+        // S.setAttribute("href", "#S")
         S.setAttribute("class", "size");
 
         let M = document.createElement("a");
         M.innerText = "8";
         M.setAttribute("id", "M")
-        M.setAttribute("href", "#M")
+        // M.setAttribute("href", "#M")
         M.setAttribute("class", "size");
 
         let L = document.createElement("a");
         L.innerText = "9";
         L.setAttribute("id", "L")
-        L.setAttribute("href", "#L")
+        // L.setAttribute("href", "#L")
         L.setAttribute("class", "size");
         box4.append(S, M, L);
     }
@@ -281,13 +283,20 @@ function showDetails(data) {
 
             })
             if (unique) {
+                added.style.display = "inline"
+                setTimeout(() => {
+                  added.style.display = "none"
+                }, 2000)
                 Cartdata.push(data);
-                window.location.href = "./cart.html"
+                // window.location.href = "./cart.html"
             } else {
-                alert("Already in cart")
+                already.style.display = "inline"
+                setTimeout(() => {
+                  already.style.display = "none"
+                }, 2000)
             }
             localStorage.setItem("cartData", JSON.stringify(Cartdata));
-            window.location.href = "cart.html";
+            
         }
     })
 }
