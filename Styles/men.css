@@ -5,11 +5,10 @@
     font-family: 'poppins', sans-serif;
 }
 
-
 .top {
     width: 100%;
     height: 45px;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
     justify-content: space-around;
 }
@@ -66,13 +65,15 @@
     size: 10px;
     cursor: pointer;
 }
-
+.top-right i:hover{
+  background-color:  #3e3d3d;
+  color: white;
+}
 .navbar {
     display: flex;
     justify-content: space-between;
     width: 100%;
     height: 90px;
-    margin-bottom: 50px;
 }
 
 .navbar>div:nth-child(1) {
@@ -103,6 +104,7 @@
 
 .searchbar>.search-input{
     width: 60%;
+    height: auto;
     margin: 20px 120px;
     border: 1px solid white;
 }
@@ -130,72 +132,35 @@ input[type=text]{
     font-family: open helvetica ,Arial, sans-serif;
 }
 .search-input>i{
-    padding: 10px;
+    padding: 5%;
     color: white;
     cursor: pointer;
 }
 
 
-/**********************************Top part done  ********************************/
+/********************************** menu  ********************************/
 
 .menu-item:hover .drop-down-menu{
     display: block;
   }
 
-  .menu-item{
+  .menu-item>a{
+    float: left;
     cursor: pointer;
-    height: 50px;
-    display: inline-block;
     position: relative;
     color: white;
-  }
-
-  .menu-item:first-child span{
-    border:none;
-  }
-  .menu-item span{
-    border-left: 1px solid black;
-    padding: 0 10px;
-  }
-
-  .drop-down-menu{
-    display: none;
-    width: 100px;
-    position: absolute;
-    background: white;
-    border: 1px solid #301B46;
-    padding: 20px;
-    top: 40px;
-    left: 0px;
-  }
-
-  .drop-down-menu:before {
-    content: "";
-    position: absolute;
-    border-color: rgba(194, 225, 245, 0);
-    border: solid transparent;
-    border-bottom-color: white;
-    border-width: 11px;
-    margin-left: -10px;
-    top: -21px;
-    right: 65px;
-    z-index: 1;
-  } 
-  
-  .drop-down-menu:after {
-      content: "";
-      position: absolute;
-      right: 66px;
-      top: -21px;
-      width: 0;
-      height: 0;
-      border: solid transparent;
-      border-width: 10px;
-      border-bottom-color: #2B1A41;
-      z-index: 0;
+    padding: 35px 20px;
+    font-family: sans-serif;
+    font-size: 15px;
+    letter-spacing: .5px;
+    text-decoration: none;
+    /* border: 2px solid red; */
   }
 
   /**********************************Navigation part done  ********************************/
+
+
+
 #banner-video{
     width: 100%;
     height: 100vh;
@@ -228,7 +193,7 @@ input[type=text]{
     letter-spacing: 1px;
     font-size: 12px;
     font-weight: 550;
-    padding: 10px 50px 10px 50px;
+    padding: 10px 30px 10px 30px;
 }
 
 .vid_content a:hover {
@@ -285,7 +250,7 @@ input[type=text]{
     font-size: 12px;
     font-weight: 550;
     letter-spacing: 1px;
-    padding: 10px 50px 10px 50px;
+    padding: 10px 30px 10px 30px;
 }
 
 .men-sale a:hover{
@@ -522,18 +487,39 @@ input[type=text]{
 /* Round image part done */
 
 
-footer{
+
+
+/************************************* contact section *****************************/
+.contact{
+    width: 98%;
+    height: 35vh;
+    display: grid;
+    margin-top: 130px;
+    grid-template-columns: repeat(4,1fr);
+    /* border: 2px solid red; */
+  }
+  .contact>.contact-care, .customer-care, .git, .store{
+    width: 100%;
+    height: auto;
+    font-family: sans-serif;
+    letter-spacing: .5px;
+    text-align: center;
+    margin: 10px;
+    /* border: 2px solid red; */
+  }
+ /************************************* footer  ***********************************/
+
+  footer{
     width: 99%;
     height: auto;
     background-color: #333;
-    margin-top: 200px;
     
   }
   .footer-top{
     width: 100%;
     height: 30vh;
     text-align: center;
-    border: 2px solid red;
+    /* border: 2px solid red; */
   }
   .footer-top>img{
     margin-top: 3%;
@@ -556,28 +542,29 @@ footer{
     display: flex;
     margin: auto;
     justify-content: center;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
   }
   .grid-footer>div:nth-child(1){
     width: 60%;
     height: auto;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     color: white;
   }
   .grid-footer>div:nth-child(2){
     width: 60%;
     height: auto;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     color: white;
   }
   .grid-footer>div:nth-child(3){
     width: 100%;
     height: auto;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     color: white;
   }
 
   .aboutus>ul li, .shop>ul li{
+    padding-left: 40px;
     color: #fff;
     list-style: none;
     font-family: sans-serif;
@@ -609,8 +596,7 @@ footer{
     cursor: pointer;
 }
 .email-input>a{
-    padding: 10px 17px;
-    font-size: 36px;
+    padding: 26px 20px 15px 12px;
     background-color: #eaebed;
 }
 
@@ -632,7 +618,6 @@ footer{
 .email-input>::placeholder{
     color: rgb(0, 0, 0);
     font-size: 16px;
-    font-weight: 600;
     font-family: sans-serif;
 }
 
@@ -643,8 +628,9 @@ footer{
     display: flex;
     justify-content: space-around;
     gap: 20px;
-    border: 2px solid red;
     color: white;
+    cursor: pointer;
+    /* border: 2px solid red; */
 }
 
 .social-media-icon>i{
@@ -652,7 +638,5 @@ footer{
     font-size: 20px;
 }
 a{
-    color: white;
+    color: #333;
 }
-
-/* Footer part Done */
