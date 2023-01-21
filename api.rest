@@ -1,1 +1,6 @@
-GET  https://colambia-api.onrender.com/AllProduct
+POST    https://colambia-api.onrender.com/Orders
+Content-Type: application/json
+
+{
+    "name" : "Aman"
+}

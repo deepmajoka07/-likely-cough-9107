@@ -93,3 +93,44 @@
     border-radius: 2%;
     background-color: rgb(230, 230, 230);
 }
+
+#table{
+    width:100%;
+}
+
+#table_Tr {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #table_Tr td, #table_Tr th {
+    border: 1px solid white;
+    padding: 8px;
+    color: white;
+  }
+  
+  #table_Tr tr:nth-child{
+    background-color: white;
+}
+  
+  #table_Tr tr:hover {
+    background-color:gray;
+    color: black;
+    
+
+}
+#table_Tr tr{
+    background-color: black;
+}
+  
+  #table_Tr th {
+    padding-top: 29px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: black;
+    color: white;
+  }
+
+
+
