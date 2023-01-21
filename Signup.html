@@ -4,6 +4,9 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./styles/Signup.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link data-require="fontawesome@5.5.0" data-semver="5.5.0" rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" />
+    <link rel="stylesheet" href="./Styles/index.css">
     <style>
         body {
             font-family: open sans, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
@@ -11,6 +14,7 @@
             font-weight: 400;
             line-height: 1.3571428571;
             color: #000;
+            
         }
 
         /* Style the tab */
@@ -59,7 +63,8 @@
         input[type="password"],
         input[type="number"] {
             height: 50px;
-            width: 94%
+            width: 94%;
+          
         }
 
         .form_control div {
@@ -91,7 +96,7 @@
         .Check_Order {
             border: 1px solid #ccc;
             width: auto;
-            padding: 10px;
+            padding: 12px;
         }
 
         .form_Order div {
@@ -120,11 +125,11 @@
         .month-label {
 
             margin-right: 40PX;
-            font-size: 0.900rem;
+            font-size: 0.600rem;
             MARGIN-LEFT: 10PX;
             POSITION: absolute;
             MARGIN-TOP: -14PX;
-            transition: .25s;
+
             color: #000;
             background-color: #fff;
             padding: 0 0.25rem;
@@ -196,9 +201,76 @@
 </head>
 
 <body>
+    <div id="head">
+        <div class="top">
+            <div class="top-left">
+                <i class="fa-solid fa-tag" style="font-size: 25px;"></i>
+                <span class="badge">4</span>
+                <h4> Get Free Shipping & Rewards</h4>
+                <i class="fa-solid fa-angle-down"></i>
 
+            </div>
+            <div class="top-right">
+                <i class="fa-solid fa-cart-shopping" id="cartPage" style="font-size: 22px;"></i>
+                <i class="fa-solid fa-circle-user" id="signin" style="font-size: 22px;"></i>
+                <i class="fa-solid fa-location-dot" style="font-size: 22px;"></i>
+                <i class="fa-solid fa-circle-question" style="font-size: 22px;"></i>
+            </div>
+        </div>
+
+        <!------------------------------------- navigation bar  ------------------------------------------>
+        <div class="navbar">
+            <div class="logo">
+                <img src="./images/logo.png" alt="">
+            </div>
+            <div>
+                <div id="menu">
+                    <div class="menu">
+                        <div class="menu-item">
+                            <a href="./men.html">Men</a>
+                        </div>
+
+                        <div class="menu-item">
+                            <a href="./women.html">Women</a>
+                        </div>
+
+                        <div class="menu-item">
+                            <a href="./kids.html">Kids</a>
+                        </div>
+
+                        <div class="menu-item">
+                            <a href="#">Footwear</a>
+                        </div>
+
+                        <div class="menu-item">
+                            <a href="#">Activity</a>
+                        </div>
+
+                        <div class="menu-item">
+                            <a href="#">Featured</a>
+                        </div>
+
+                        <div class="menu-item">
+                            <a href="#">Winter Sale</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="searchbar">
+                <div class="search-input">
+                    <input type="text" width="60%"  name="" placeholder="Search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+<BR>
+    <div>
+        <a href="./index.html" style="color:black;position: fixed;left: 5%;top:138px;">Home</a></div>
     <div class="form_section">
         <div class="section_1">
+            
             <div class="tab">
                 <button class="tablinks" onclick="openForm(event, 'Login')" style="width: auto;">Log in</button>
                 <button class="tablinks" onclick="openForm(event, 'SignUp')" style="width: auto;"
@@ -262,7 +334,7 @@
                     <p>* Required</p>
                 </div>
                 <div class="Login_info form_control">
-                    <form>
+                    <form >
                         <div class="email-input">
                             <input type="email" id="email" class="focus_input" placeholder="Email *" required />
                             <div id="email-error" class="error-image">
@@ -272,7 +344,7 @@
                         </div>
                         <div id="email_warning" class="warning-below"></div>
                         <div class="email-input">
-                            <input type="password" id="password" class="focus_input" placeholder="Password *" />
+                            <input type="password" id="password" class="focus_input" placeholder="Password *" required />
                             <div id="password-error" class="error-image">
 
                                 <img src="https://img.icons8.com/ios-filled/50/900000/error--v1.png" />
@@ -282,7 +354,7 @@
                         <div id="password_warning" class="warning-below"></div>
 
                         <div><input type="password" id="Confirm_password" class="focus_input"
-                                placeholder="Confirm Password *" />
+                                placeholder="Confirm Password *" required />
                             <div id="Confirm_password-error" class="error-image">
 
                                 <img src="https://img.icons8.com/ios-filled/50/900000/error--v1.png" style="position: absolute;
@@ -302,23 +374,46 @@
                 </div>
                 <div class="My_Profile form_control">
 
-                    <div><input type="text" id="F_Name" placeholder="First Name *" required /></div>
-                    <div is="feedback_warning"></div>
+                    <div><input type="text" id="Full_Name" placeholder="First Name *" class="focus_input" />
+                        <div id="Full_Name-error" class="error-image">
 
-                    <div><input type="text" id="L_Name" placeholder="Last Name *" /></div>
-                    <div is="feedback_warning"></div>
+                            <img src="https://img.icons8.com/ios-filled/50/900000/error--v1.png" style="position: absolute;
+                            margin-left: -62px;" />
+                        </div>
+                    </div>
+                    <div id="Full_Name_warning" class="warning-below"></div>
 
-                    <div><input type="text" id="Zip_Code" placeholder="Zip Code *" /></div>
-                    <div is="feedback_warning"></div>
+                    <div><input type="text" id="Last_Name" placeholder="Last Name *" class="focus_input" />
+                        <div id="Last_Name-error" class="error-image">
 
-                    <div><input type="number" id="Phone" placeholder="Phone *" /></div>
-                    <div is="feedback_warning"></div>
+                            <img src="https://img.icons8.com/ios-filled/50/900000/error--v1.png" style="position: absolute;
+                            margin-left: -62px;" />
+                        </div>
+                    </div>
+                    <div id="Last_Name_warning" class="warning-below"></div>
+                    <div><input type="text" id="Zip_Code" placeholder="Zip Code *" class="focus_input" />
+                        <div id="Zip_Code-error" class="error-image">
+
+                            <img src="https://img.icons8.com/ios-filled/50/900000/error--v1.png" style="position: absolute;
+                            margin-left: -62px;" />
+                        </div>
+                    </div>
+                    <div id="Zip_Code_warning" class="warning-below"></div>
+
+                    <div><input type="number" id="Phone" placeholder="Phone *" class="focus_input" />
+                        <div id="Phone-error" class="error-image">
+
+                            <img src="https://img.icons8.com/ios-filled/50/900000/error--v1.png" style="position: absolute;
+                            margin-left: -62px;" />
+                        </div>
+                    </div>
+                    <div id="Phone_warning" class="warning-below"></div><br>
                     <div class="form-help-text">Example: (555) 555-5555</div>
                     <div><label>Gender</label></div>
-                    <input type="radio" name="gender" id="gender1" value="Male">Male
-                    <input type="radio" name="gender" id="gender2" value="Female">Female
-                    <input type="radio" name="gender" id="gender3" value="Not Answer">Prefer not to answer
-
+                    <input type="radio" name="gender" id="Gender" value="Male" >Male
+                    <input type="radio" name="gender" id="gender" value="Female" >Female
+                    <input type="radio" name="gender" id="GENDER" value="Not Answer" >Prefer not to answer
+                    <div id="G_warning" class="warning-below"></div>
 
 
                     <div id="Birth_data">
@@ -336,9 +431,10 @@
                     </div>
 
                     <div style="margin-top: 40px;">
-                        <input type="checkbox" id="term_Con" />Please send me emails about new products, special offers
+                        <input type="checkbox" id="select_term_conditions"/>Please send me emails about new products, special offers
                         and
                         more.
+                        <div id="select_term_conditions_warning" class="warning-below"></div>
                     </div>
 
                 </div>
@@ -364,13 +460,16 @@
                                 src="https://columbia.scene7.com/is/image/ColumbiaSportswear2/20590_C_U_X1_SU20_CGR_HP_Banner_Black_Logo_resized_@2x?$aem_png$" />
                         </div>
                         <div class="form_group">
-                            <input type="checkbox" id="reward_check" />
+                            <input type="checkbox" id="reward_check"  />
                             <label>I want to join Greater Rewards for free shipping and rewards (it's free to join). By
                                 checking this box, I have read and understood the <a href="#">Notice of Financial
                                     Incentives,</a>
                                 and I agree to the <a href="#">Terms and Conditions.</a>></label>
+                                
+                        <div id="reward_check_warning" class="warning-below"></div>
                         </div>
                     </div>
+                    <br>
                     <div style="text-align: center; font-size: 14px;">
                         <div>
                             <button id="signup_submit">CREATE ACCOUNT</button>
@@ -430,9 +529,101 @@
             </div>
         </div>
     </div>
-</body>
-
-</html>
+    <div class="contact">
+        <div class="contact-care">
+            <i class="fa-solid fa-phone" style="font-size: 20px;"></i>
+            <p>(800) 622-6953</p>
+            <b>Phone: 4am-9pm PT M-F, 5am-8am</b><br>
+            <b>Sat/Sun</b><br>
+            <b>Chat: 4am-9pm PT M-F, 5am-8pm Sat/Sum</b><br>
+            <b>Phones closed 1/16 and 2/20</b>
+        </div>
+        <div class="customer-care">
+            <i class="fa-regular fa-circle-question" style="font-size: 25px;"></i>
+            <p>Customer Care</p>
+        </div>
+        <div class="git">
+            <i class="fa-solid fa-gift" style="font-size: 25px;"></i>
+            <p>Gift Cards</p>
+        </div>
+        <div class="store">
+            <i class="fa-solid fa-location-dot" style="font-size: 25px;"></i>
+            <p>Find a Store</p>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-top">
+            <img src="./images/greatReward.png" alt=""><br>
+            <p class="join">Join the adventure</p>
+            <p>Get free ground shipping and rewards on every Purchase plus other exclusive benefits<i
+                    class="fa-solid fa-angle-right"></i></p>
+        </div>
+        <div class="grid-footer">
+            <div class="aboutus">
+                <ul>
+                    <li class="join">About Us</li>
+                    <li>Tough Mother Outdoor Guide</li>
+                    <li>History</li>
+                    <li>Columbia Greater Rewards Program</li>
+                    <li>Corporate Responsibility</li>
+                    <li>Investor Relations</li>
+                    <li>Press Center</li>
+                    <li>Careers</li>
+                    <li>Affiliate Program</li>
+                    <li>Product Testing</li>
+                    <li>Become a Business Partner</li>
+                    <li>Digital Media Resources</li>
+                </ul>
+            </div>
+            <div class="shop">
+                <ul>
+                    <li class="join">Shop</li>
+                    <li>Shop By Activity</li>
+                    <li>Shop By Technology</li>
+                    <li>Returns</li>
+                    <li>Warranty</li>
+                    <li>Product Care</li>
+                    <li>Accessibility</li>
+                    <li>Special Deals</li>
+                    <li>Professional Purchase</li>
+                    <li>Size Guides</li>
+                </ul>
+            </div>
+            <div class="connectus">
+                <p class="join">CONNECT WITH US</p>
+                <p>Subscribe and be the first to hear about new products, sales, and more.</p>
+                <div class="email-container">
+                    <div class="email-input">
+                        <i class="fa-sharp fa-solid fa-envelope" style="font-size: 30px;"></i>
+                        <input type="text" name="" placeholder="Enter your email address">
+                        <a href=""><i class="fa-solid fa-angle-right" style="font-size: 25px;"></i></a>
+                    </div>
+                </div>
+                <p>By signing up, you agree to our Terms of Use and Privacy Policy.</p>
+                <div class="social-media-icon">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fa-brands fa-tiktok"></i>
+                </div>
+                <p class="join"> CUSTOMER CARE</p>
+                <p>
+                    Phone: 4am-9pm PT M-F, 5am-8pm Sat/Sun <br> <br>
+                    Chat: 4am-9pm PT M-F, 5am-8pm Sat/Sun <br><br>
+                    Phones closed 1/16 and 2/20 <br><br><br>
+                    <a href="">Give us Feedback</a>
+                </p>
+            </div>
+        </div>
+    
+    </footer>
+    </body>
+    </html>
+    
+    <script src="./scripts/homepage.js">
+    </script>
 
 
 <script>
@@ -474,7 +665,7 @@
     let email = document.getElementById("email");
     let pass = document.getElementById("password");
     let items = document.querySelectorAll(".focus_input")
-    //console.log(items);
+    console.log(items);
     items.forEach((el) => {
         el.addEventListener("focusout", (e) => {
             if (e.target.value == "") {

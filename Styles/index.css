@@ -107,7 +107,7 @@ body {
     border: 1px solid white;
 }
 
-input[type=text]{
+.search-input>input{
     width: 80%;
     color: white;
     font-size: 17px;
