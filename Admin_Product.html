@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Pannel</title>
-    <link rel="stylesheet" href="./styles/Admin_Home.css">
+    <link rel="stylesheet" href="./styles/Admin_Product.css">
 </head>
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
@@ -29,12 +29,28 @@
         </div>
         <div class="month_Chart">
             <h1 class="admin">Admin Pannel</h1>
-            <h2 class="heading">Monthly Pie Chart</h2>
 
-            <div id="myChart"></div>
+            <div class="table">
+                <table>
+                    <thead>
+                        <th>Product ID</th>
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>Category</th>
+                        <th>Gender</th>
+                        <th>rating</th>
+                        <th>price</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </thead>
+                    <tbody id="Tbody">
+                        
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 </body>
-<script src="./scripts/Admin_Home.js"></script>
+<script src="./scripts/Admin_product.js"></script>
 
 </html>
