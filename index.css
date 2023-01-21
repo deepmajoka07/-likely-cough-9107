@@ -94,16 +94,17 @@ body {
 }
 
 
-.navbar>div:nth-child(3) {
+.navbar>div:nth-child(3) {  
     width: 50%;
-    height: auto;
+    height: 100%;
     background-color:#333;
+    /* border: 2px solid red; */
 }
 
 .searchbar>.search-input{
     width: 60%;
-    height: auto;
-    margin: 20px 120px;
+    height: 60%;
+    margin: 20px 60px;
     border: 1px solid white;
 }
 
@@ -130,7 +131,7 @@ input[type=text]{
     font-family: open helvetica ,Arial, sans-serif;
 }
 .search-input>i{
-    padding: 5%;
+    margin-left: -15px;
     color: white;
     cursor: pointer;
 }
@@ -187,18 +188,16 @@ input[type=text]{
 
 .shop-img-btn {
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 4%;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 700;
     color: black;
-    padding: 10px 20px;
+    padding: 10px 10px;
     text-transform: uppercase;
     font-family: open  helvetica, Arial, sans-serif;
-    margin-top: 1rem;
     border: none;
     background-color: white;
-    font-style: bold;
     cursor: pointer;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
@@ -249,11 +248,12 @@ input[type=text]{
 }
 /***************************** .Get Ready For Winter************************************************/
 .container {
-  width: 98%;
+  width: 95%;
   height: 550px;
   position: relative;
   overflow: hidden;
   margin: auto;
+  /* border:  5px solid red; */
 }
 .container>h2{
   font-size: 1.4rem;
@@ -261,7 +261,7 @@ input[type=text]{
     color: #000;
     text-transform: uppercase;
     font-family: sans-serif;
-    
+    margin-left: 30px;
 }
 
 .container>ul {
@@ -406,6 +406,7 @@ li>h4{
 /*********************** Featured Favorites  ********************************/
 
 .title, .play{
+  margin-left: 30px;
     font-size: 1.5rem;
     font-family: bold, sans-serif;
 }
@@ -450,6 +451,7 @@ li>h4{
      border-bottom: 1px solid white;
      font-family: sans-serif;
      font-size: 15px;
+     
 }
 
 .men-women{
@@ -573,13 +575,6 @@ li>h4{
     font-family: bold,sans-serif;
   }
 
-  /************************************* Explore Best Sellers   **********************************/
-  .explore{
-    width: 90%;
-    height: 80vh;
-    margin: auto;
-    background-color: #446886;
-  }
 
   /************************************* See you out there. *****************************/
 
@@ -643,13 +638,10 @@ li>h4{
   }
 
 
-
-
-
   /************************************* contact section *****************************/
   .contact{
     width: 98%;
-    height: 35vh;
+    height: 38vh;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     /* border: 2px solid red; */
@@ -668,9 +660,10 @@ li>h4{
 
   footer{
     width: 99%;
-    height: auto;
+    height: 125vh;
     background-color: #333;
-    
+    /* border:  5px solid blue; */
+
   }
   .footer-top{
     width: 100%;
@@ -682,6 +675,7 @@ li>h4{
     margin-top: 3%;
   }
   .join{
+    height: auto;
     color: white;
     font-size: .875rem;
     font-weight: bold;
@@ -717,7 +711,7 @@ li>h4{
     width: 100%;
     height: auto;
     /* border: 2px solid red; */
-    color: white;
+    margin: 0px 0px;
   }
 
   .aboutus>ul li, .shop>ul li{
@@ -729,33 +723,30 @@ li>h4{
     cursor: pointer;
   }
 
+ 
   .connectus>p{
     color: #fff;
     margin: 20px 40px;
     font-family: sans-serif;
+    /* border: 2px solid red; */
+
   }
   .email-container{
-    width: 90%;
+    width: 60%;
     height: 10%;
-    margin: auto;
+    margin-left: 40px;
     background-color: #fff;
     text-align: center;
   }
 
   .email-container>.email-input{
+    width: auto;
+    height: auto;
     background-color: white;
+    /* border: 4px solid green; */
 }
 
-.email-input>i{
-    padding: 15px 10px;
-    color: black;
-    cursor: pointer;
-}
-.email-input>a{
-    padding: 10px 17px;
-    font-size: 36px;
-    background-color: #eaebed;
-}
+
 
 .email-input>input[type=text]{
     width: 75%;
@@ -785,15 +776,259 @@ li>h4{
     display: flex;
     justify-content: space-around;
     gap: 20px;
+    margin:auto;
     color: white;
     cursor: pointer;
     /* border: 2px solid red; */
 }
 
-.social-media-icon>i{
+.connectus>.social-media-icon>i{
     color: white;
     font-size: 20px;
 }
 a{
     color: white;
 }
+
+
+
+
+
+
+
+/************************* Responsive media Query  *************************************/
+
+@media only screen and (min-width: 401px) and (max-width: 800px) {
+
+    .top{
+      width: 100%;
+      height: 5%;
+      background-color: white;
+      /* border: 2px solid red; */
+    }
+    .badge{
+      position: absolute;
+      top: 18px;
+      left: 7.9rem;
+      padding: 2px 6px;
+      border-radius: 50%;
+      background-color:#007ab8;
+      color: white;
+  }
+    .top>.top-right{
+      display: none;
+     }
+
+     .navbar>div:nth-child(1) {
+      width: 130%;
+      height: auto;
+      /* border: 3px solid red; */
+      background-color: #007ab8;
+  }
+     .navbar>.logo>img{
+      /* margin: 10px; */
+      width: 95%;
+      height: 100%;
+  }
+     
+    .navbar>div:nth-child(2) {
+      width: 100%;
+      height: auto;
+      background-color: #007ab8;
+  }
+    .navbar>div:nth-child(3) {
+      width: 100%;
+      height: auto;
+      background-color: #007ab8;
+  }
+  .searchbar>.search-input{
+    display: none;
+}
+.menu-item>a{
+  display: none;
+}
+
+.snow-container>img {
+  width: 100%;
+  height: auto;  
+}
+
+.bottom-left-text {
+  position: absolute;
+    top: 30%;
+    left: 4%;
+    color: white;
+    font-size: 15px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 2px;
+    letter-spacing: -.08rem;
+    text-shadow: 0px 0px 20px #446886;
+}
+
+
+.shop-img-btn {
+  position: absolute;
+  top: 40%;
+  left: 4%;
+  font-size: 10px;
+  font-weight: 700;
+  color: black;
+  padding: 3px 6px;
+  text-transform: uppercase;
+  font-family: open  helvetica, Arial, sans-serif;
+  margin-top: 1rem;
+  border: none;
+  background-color: white;
+  font-style: bold;
+  cursor: pointer;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+/***************************** .Get Ready For Winter************************************************/
+.container {
+  width: 100%;
+  height: 550px;
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+  /* border:  5px solid red; */
+}
+
+
+.adverties>img {
+  margin-top: 5%;
+  width: 50%;
+  height: 12%;
+  /* border:  5px solid red; */
+
+}
+/*********************** Featured Favorites  ********************************/
+.title, .play{
+  font-size: 1.5rem;
+  font-family: bold, sans-serif;
+}
+
+.favorites{
+  width: 90%;
+  height: auto;
+  margin-left: auto;
+  margin-top: -250px;
+  align-items: center;
+  /* border: 3px solid red; */
+  /* margin: 15px auto; */
+}
+.men-women{
+  width: 90%;
+   height: auto;
+   margin-left: auto;
+   align-items: center;
+   /* border: 3px solid red; */
+   margin: auto;
+   flex-direction: column;
+   
+   gap: 15px;
+}
+
+#cold{
+  position: absolute;
+  top: 90%;
+ left: 2%;
+  color: white;
+  border-bottom: 1px solid white;
+  font-family: sans-serif;
+  font-size: 15px;
+  margin-top: -30px;
+}
+
+/******************************************** How Do You Play? *****************************************/
+
+.play{
+  width: 100%;
+  height: auto;
+  margin: auto;
+  margin-top: 8%;
+  /* border: 3px solid red; */
+}
+.play-img>div>img{
+  width: 90%;
+  height: 80%;
+}
+.play-img{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  /* border: 2px solid green; */
+}
+
+.fishing h3, .hiking h3, .hunting h3, .skisnow h3{
+  position: absolute;
+  top: 90%;
+  left: 10%;
+  color: white;
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+/* ****************“Nature. The world’s largest playground.”  *************************/
+
+.nature-div{
+  width: 100%;
+  height: auto;
+  margin: auto;
+  /* align-items: center; */
+  /* border: 2px solid green; */
+}
+.nature{
+  /* margin: auto; */
+  font-size: 2rem;
+  font-family: bold,sans-serif;
+  color: #0085ca;
+  text-align: center;
+  font-weight: 700;
+  /* border: 2px solid red; */
+}
+.name{
+  text-align: center;
+  margin-top: -100px;
+  margin-bottom: 50px;
+  /* border: 2px solid red; */
+}
+.grid-template>div a{
+  display: none;
+}
+
+ /************************************* contact section *****************************/
+ .contact{
+  width: 98%;
+  height: 60vh;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  /* border: 2px solid red; */
+}
+
+ /************************************* footer  ***********************************/
+
+ footer{
+  width: 99%;
+  height: 175vh;
+  background-color: #333;
+  /* border:  5px solid blue; */
+  
+}
+
+.grid-footer{
+  width: 100%;
+  height: auto;
+  flex-direction:  column;
+  margin-top: -50px;
+  justify-content: center;
+  /* border: 2px solid red;  */
+}
+
+
+}   
