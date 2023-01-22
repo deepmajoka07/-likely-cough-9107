@@ -6,9 +6,64 @@
             "Password": "Admin@1212"
         },
         {
-            "id": 2,
-            "name": "deepak",
-            "Age": 25
+            "id" : 2,
+            "name":"Deepak",
+             "email":"deep@gmail.com",
+             "Password":"12345678",
+             "Phone":"859345353",
+             "gender":"Male",
+             "zipcode":"368382"
+             
+        },
+        {
+            "id" : 3,
+            "name":"Sai Singh",
+             "email":"Sai@gmail.com",
+             "Password":"12345678",
+             "Phone":"859345351",
+             "gender":"Female",
+             "zipcode":"268382"
+             
+        },
+        {
+            "id" : 4,
+            "name":"Anand Kumar",
+             "email":"Kumar@gmail.com",
+             "Password":"12345678",
+             "Phone":"859345367",
+             "gender":"Male",
+             "zipcode":"368382"
+             
+        },
+        {
+            "id" : 5,
+            "name":"Kartik",
+             "email":"k@gmail.com",
+             "Password":"12345678",
+             "Phone":"859345353",
+             "gender":"Male",
+             "zipcode":"368382"
+             
+        },
+        {
+            "id" : 6,
+            "name":"Aman",
+             "email":"murya@gmail.com",
+             "Password":"12345678",
+             "Phone":"859345353",
+             "gender":"Female",
+             "zipcode":"368382"
+             
+        },
+        {
+            "id" : 7,
+            "name":"Dinesh",
+             "email":"dinesh@gmail.com",
+             "Password":"12345678",
+             "Phone":"859345350",
+             "gender":"Male",
+             "zipcode":"368382"
+             
         }
     ],
     "Orders" : [
