@@ -1,0 +1,262 @@
+/* --------top part css-------------- */
+#navBar{
+    height: 100px;
+    background-color: grey;
+}
+#under_nav{
+ display: flex;   
+height: 60px;
+background-color: black;
+}
+#under_nav label{
+    margin-left: 20px;
+    padding-top: 24px;
+    color: white;
+}
+#under_nav label a{
+    color: white;
+}
+#under_nav_image{
+/* padding-top: 0px;   */
+padding-top: 10px; 
+margin-left: 440px; 
+/* margin: auto; */
+/* border: 2px solid violet;     */
+width: 5%;
+height: 50px;
+}
+#under_nav_image img{
+margin:auto;    
+height: 80%;
+width: 100%;
+}
+
+/* ----------------------------medium top------ */
+#hedaingPhone{
+    margin: auto;
+    width: 95%;
+    height:100px;
+    display: flex;
+}
+/* //heading */
+#forShopping{
+    font-size: 40px;
+}
+/* icon  */
+#phone{
+padding-top: 40px;
+margin-left: 67%;
+}
+#phoneNum {
+    padding-top: 45px;
+    margin-left: 10px;
+
+}
+
+.main_container{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+/* ----------------bttom of top--------------- */
+#topDiv{
+    height: 140px;
+    width: 95%;
+    margin: auto;
+    border: grey 1px solid;
+}
+#topDiv img{
+    margin-top: 10px;
+    padding-left: 36%;
+    height: 40px;
+}
+#topDiv p{
+    font-size: 19px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top:0px;
+    padding-left: 30%;
+}
+#for_free{
+    font-size: 17px;
+    color: black;
+    padding-left: 40%;
+  
+}
+#for_free:hover{
+color: grey;
+}
+#login{
+    font-size: 17px;
+    color: black;
+    padding-left: 8%;
+}
+#login:hover{
+    color: grey;
+}
+
+#informations{
+    margin-top: 3%;
+    display: flex;
+    margin: 2%;
+    height: 60px;
+    /* border: 2px solid black; */
+    width: 97%;
+
+}
+.onecss{
+    padding-top:2%;
+}
+
+#items{
+    font-weight: bolder;
+    font-size:20px; 
+    margin-left: 4%;
+}
+
+#price{
+    margin-left: 35%;
+    font-weight: bolder;
+    font-size:20px;
+}
+#qty{
+    margin-left: 3%;
+    font-weight: bolder;
+    font-size:20px;
+  
+}
+#sub{
+    margin-left: 3%;
+    font-weight: bolder;
+    font-size:20px;
+}
+#summary{
+    margin-left: 10%;
+    font-weight: bolder;
+    font-size:20px;
+}
+
+/* this is for conatiner */
+/* #container{
+    display: flex;
+    height:240px;
+    width: auto;
+    border: 2px solid brown;
+} */
+#container{
+    display: block;
+    width:100%;
+    height: 100%;
+    /* border: 2px dotted black; */
+}
+
+.remove{
+    border: 1px solid black;
+    padding: 1% 5%;
+}
+
+.remove:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+.remove:active{
+    background:rgb(0, 0, 0,0.7) ;
+}
+.main_container{
+    display: grid;
+    grid-template-columns: 25% 28% 10% 10% 10%;
+    grid-template-rows: auto;
+    /* margin-left:10px; */
+    width: 96%;
+    height: 60%;
+    /* border: 2px solid red; */
+}
+
+
+#order_summary{
+
+    /* position: fixed; */
+    display: grid;
+    margin-left:1%;
+    width: 40%;
+    height:auto;
+    /* border: 2px solid black; */
+}
+#subtotal{
+    height: 100%;
+    width: 100%;
+    /* border: 2px solid yellow; */
+    margin-left:150%;
+    text-align: center;
+}
+
+#quantitys{
+    height: 100%;
+    width: 100%;
+    /* border: 2px solid orangered; */
+    margin-left: 125%;
+    text-align: right;
+}
+#priceDiv{
+    height: 100%;
+    width: 100%;
+    /* border: 2px solid blue; */
+    text-align: right;
+    margin-left:99%;
+
+}
+
+#order_summary a{
+margin-top: 7%;
+margin-left: 5%;
+}
+.upper_details{
+    height:auto;
+    margin-left:5%;
+}
+.upper_values{
+   text-align: right;
+}
+#subtotalforsummry{
+    margin-left: 60%;
+}
+#stndlv{
+    margin-left: 34%;
+    height: 0px;
+   
+}
+#esttax{
+    margin-left: 49%;
+}
+#totalestimate{
+margin-left: 40%;
+}
+#save{
+    margin-left: 60%;
+}
+#order_summary img{
+    width: 60px;
+    height: 30px;
+    margin-left: 40%;
+    margin-top: 10%;
+}
+#guestcheckout{
+    height: 40px;
+    width: 80%;
+    background-color: brown;
+    color: white;
+    font-weight: bolder;
+    margin: auto;
+}
+
+.notification{
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 45%;
+    width: 17%;
+    font-size: 23px;
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+    background: rgba(0,0,0,0.8);
+    color: white;
+}
