@@ -190,7 +190,7 @@ input[type=text]{
     border-bottom-right-radius: 3px;
     z-index: 111;
     transition: 0.4s all;
-    margin-top: 17px;
+    margin-top: 20px;
     /* border: 2px solid red; */
 
   }
@@ -208,6 +208,9 @@ input[type=text]{
   }
   
 
+  .hamburger i{
+    display: none;
+  }
 
 
 /*************************** best_in_show_imgage ********************************/
@@ -298,7 +301,7 @@ input[type=text]{
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 /***************************** .Get Ready For Winter************************************************/
-.container {
+.slide-container {
   width: 95%;
   height: 550px;
   position: relative;
@@ -306,7 +309,7 @@ input[type=text]{
   margin: auto;
   /* border:  5px solid red; */
 }
-.container>h2{
+.slide-container>h2{
   font-size: 1.4rem;
   font-family: bold, sans-serif;
     color: #000;
@@ -315,7 +318,7 @@ input[type=text]{
     margin-left: 30px;
 }
 
-.container>ul {
+.slide-container>ul {
   width: 9999%;
   height: 100%;
   list-style: none;
@@ -324,7 +327,7 @@ input[type=text]{
   
 }
 
-.container>ul>li {
+.slide-container>ul>li {
   
   width: 26.66vw;
   height: 70%;
@@ -859,7 +862,7 @@ a{
     }
     .badge{
       position: absolute;
-      top: 18px;
+      top: 14%;
       left: 7.9rem;
       padding: 2px 6px;
       border-radius: 50%;
@@ -871,36 +874,29 @@ a{
      }
 
      .navbar-container>div:nth-child(1) {
-      width: 100%;
+      width: 80%;
       height: auto;
       /* border: 3px solid red; */
       background-color: #007ab8;
   }
      .navbar-container>.logo>img{
       /* margin: 10px; */
-      width: 100%;
+      width: 80%;
       height: 95%;
   }
      
-    /* .navbar-container>div:nth-child(2) {
-      width: 100%;
-      height: auto;
-      background-color: #007ab8;
+
+  .hamburger i{
+    background-color: #333;
+    height: 17%;
+    display: block;
+    font-size: 25px;
+    padding: 38px;
+    cursor: pointer;
   }
-    .navbar-container>div:nth-child(3) {
-      width: 100%;
-      height: auto;
-      background-color: #007ab8;
-  } */
 
   .navbar {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    background-color: #333;
-    /* border: 2px solid red; */
+    display: none;
   }
   
   .searchbar>.search-input{
@@ -946,14 +942,6 @@ a{
 }
 
 /***************************** .Get Ready For Winter************************************************/
-.container {
-  width: 100%;
-  height: 550px;
-  position: relative;
-  overflow: hidden;
-  margin: auto;
-  /* border:  5px solid red; */
-}
 
 
 .adverties>img {
@@ -973,7 +961,7 @@ a{
   width: 90%;
   height: auto;
   margin-left: auto;
-  margin-top: -250px;
+  margin-top: -150px;
   align-items: center;
   /* border: 3px solid red; */
   /* margin: 15px auto; */
@@ -992,7 +980,7 @@ a{
 
 #cold{
   position: absolute;
-  top: 90%;
+  top: 95%;
  left: 2%;
   color: white;
   border-bottom: 1px solid white;
@@ -1023,9 +1011,12 @@ a{
   /* border: 2px solid green; */
 }
 
+.featured-favorites-container>h3{
+  top: 60%;
+}
 .fishing h3, .hiking h3, .hunting h3, .skisnow h3{
   position: absolute;
-  top: 90%;
+  top: 92%;
   left: 10%;
   color: white;
   font-size: 16px;
@@ -1074,7 +1065,7 @@ a{
 
  footer{
   width: 99%;
-  height: 200vh;
+  height: auto;
   background-color: #333;
   /* border:  5px solid blue; */
   
@@ -1082,9 +1073,8 @@ a{
 
 .grid-footer{
   width: 100%;
-  height: 200vh;
+  height:auto;
   flex-direction:  column;
-  margin-top: 380px;
   background-color: #333;
 }
 

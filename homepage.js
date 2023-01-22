@@ -1,6 +1,6 @@
 
 function responsiveSlider() {
-    const slider = document.querySelector('.container');
+    const slider = document.querySelector('.slide-container');
     let sliderWidth = slider.offsetWidth / 3;
     const sliderList = document.querySelector('ul');
     let items = sliderList.querySelectorAll('li').length -2 ;
@@ -45,3 +45,19 @@ function responsiveSlider() {
   window.onload = function() {
     responsiveSlider();
   }
+
+
+
+  let a = document.getElementById('hamburger')
+  let slidebar = document.getElementById('slider-bar')
+
+
+  a.addEventListener('click', ()=> {
+      slidebar.style.display='block';
+      console.log('hello')
+  })
+
+  slidebar.addEventListener('focusout', () => {
+    slidebar.style.display='none';
+    console.log('hello')
+  })
