@@ -26,7 +26,7 @@ Start the server
   npm run start
 ```
 ## Support
-![App Screenshot]()
+![App Screenshot](shorturl.at/CHNU9)
 For support, email -gentalman1945@gmail.com 
 ## Screenshots
 ## Contributing
@@ -41,4 +41,22 @@ Contributions are always welcome!
 - [Ramanjeet Singh](https://github.com/gzbsingh)
 - [Aman Maurya](https://github.com/Amanmauryacode)
 - [Mohit Negi](https://github.com/MOHITNEGI16)
+## Lessons Learned
+
+We All Contributer build this project.We all face some problems.
+## Features
+
+  -Responsive
+- Live previews
+- Fullscreen mode
+- Cross platform
+- ## FAQ
+
+#### which Api you use for database
+
+Web local storage Api,Json Server
+
+#### Did you use bootstrap for style
+
+No
 
