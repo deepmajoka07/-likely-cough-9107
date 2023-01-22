@@ -6,15 +6,6 @@ Content-Type: application/json
 }
 
 ###
-POST  https://colambia-api.onrender.com/Orders
-Content-Type: application/json
-{
-    "Name": "Aman ",
-    "Email_Id": "Aman3@gmail.com",
-    "Mob_No": "9849574985",
-    "Address": "Uttra Khand",
-    "Zip_code": "244715",
-    "Order_Id": 120044,
-    "Date": "22/1/2023",
-    "id": 2
-}
+# POST  https://colambia-api.onrender.com/Orders
+# Content-Type: application/json
+

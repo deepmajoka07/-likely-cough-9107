@@ -13,12 +13,12 @@ let table=document.getElementById("table_details")
 
 
 function creatingTable(data){
-   for (let i=1;i<data.length;i++){
+   for (let i=0;i<data.length;i++){
     var rows=
     `
    <tr>
     <td>${data[i].Order_Id}</td>
-    <td>${data[i-1].id}</td>
+    <td>${data[i].id}</td>
     <td>${data[i].Name}</td>
     <td>${data[i].Email_Id}</td>
     <td>${data[i].Mob_No}</td>

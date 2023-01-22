@@ -23,7 +23,6 @@ let numberError = document.getElementById("numberError");
 
 let checkout = document.getElementById("guestcheckout");
 
-let message = document.getElementById("message");
 
 let cartData = JSON.parse(localStorage.getItem("cartData")) || []
 
@@ -103,17 +102,14 @@ checkout.addEventListener("click", () => {
            
         }
         updateOrderApi(obj);
-        message.innerText = "Order Placed Successfully"
-        message.style.display = "block";
+       
 
         setTimeout(() => {
-            message.style.display = "none";
-            window.location.href = "./product.html"
-        }, 1200)
+           
+            window.location.href = "./payment.html"
+        }, 500)
 
-    } else (
-        alert("missing")
-    )
+    } 
 })
 
 function updateOrderApi(obj) {
