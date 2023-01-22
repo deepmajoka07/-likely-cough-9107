@@ -6,7 +6,6 @@
             "Password": "Admin@1212"
         },
         {
-            "id" : 2,
             "name":"Deepak",
              "email":"deep@gmail.com",
              "Password":"12345678",
@@ -16,7 +15,6 @@
              
         },
         {
-            "id" : 3,
             "name":"Sai Singh",
              "email":"Sai@gmail.com",
              "Password":"12345678",
@@ -26,8 +24,6 @@
              
         },
         {
-            
-            "id" : 4,
             "name":"Anand Kumar",
              "email":"Kumar@gmail.com",
              "Password":"12345678",
@@ -37,8 +33,6 @@
              
         },
         {
-            
-            "id" : 5,
             "name":"Kartik",
              "email":"k@gmail.com",
              "Password":"12345678",
@@ -48,7 +42,6 @@
              
         },
         {
-            "id" : 6,
             "name":"Aman",
              "email":"murya@gmail.com",
              "Password":"12345678",
@@ -58,7 +51,6 @@
              
         },
         {
-            "id" : 7,
             "name":"Dinesh",
              "email":"dinesh@gmail.com",
              "Password":"12345678",
@@ -67,41 +59,10 @@
              "zipcode":"368382"
              
         }
-        
     ],
     "Orders" : [
         {
-            "cart_data" : [1,2,2,3,5,5],
-            "Name": "Aman ",
-            "Email_Id": "Aman3@gmail.com",
-            "Mob_No": "9849574985",
-            "Address": "paryagraj",
-            "Zip_code": "244715",
-            "Order_Id": 120044,
-            "Date": "22/1/2023",
-            "id": 1
-        },
-        {
-            "cart_data" : [1,2,2,3],
-            "Name": "Ramanjeet ",
-            "Email_Id": "Ramanjeet@gmail.com",
-            "Mob_No": "9849574985",
-            "Address": "Haryana",
-            "Zip_code": "244715",
-            "Order_Id": 120045,
-            "Date": "22/1/2023",
-            "id": 2
-        },
-        {
-            "cart_data" : [1,2,2,3,5],
-            "Name": "Depak ",
-            "Email_Id": "deepak@gmail.com",
-            "Mob_No": "9849574966",
-            "Address": "Haryana",
-            "Zip_code": "244715",
-            "Order_Id": 120046,
-            "Date": "22/1/2023",
-            "id": 3
+            "id" : 1
         }
     ],
     "AllProduct": [

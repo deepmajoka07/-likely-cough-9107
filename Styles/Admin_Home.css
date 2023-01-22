@@ -15,7 +15,7 @@
 
 .navigator {
     width: 20%;
-       background: rgb(0,0,0,0.9);
+       background: #0070d2;
     
     /* border: 1px solid red; */
 }
@@ -92,4 +92,5 @@
     overflow: hidden;
     border-radius: 2%;
     background-color: rgb(230, 230, 230);
+    
 }
