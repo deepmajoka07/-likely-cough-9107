@@ -97,8 +97,10 @@ checkout.addEventListener("click", () => {
             Email_Id: email.value,
             Mob_No: number.value,
             Address: Add_1.value,
+            Zip_code:zipCode.value,
             Order_Id: Math.floor(100000 + Math.random() * 100000),
             Date: `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`
+           
         }
         updateOrderApi(obj);
         message.innerText = "Order Placed Successfully"

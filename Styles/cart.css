@@ -457,7 +457,6 @@ margin-left: 40%;
 /*------------footer---------------- */
 
 footer{
-    margin-top: 5%;
     width: 99%;
     height: auto;
     background-color: #333;
@@ -543,12 +542,10 @@ footer{
     cursor: pointer;
 }
 .email-input>a{
-    padding: 10px 30px;
+    padding: 10px 17px;
     font-size: 36px;
     background-color: #eaebed;
-    
 }
-
 
 .email-input>input[type=text]{
     width: 75%;
@@ -590,6 +587,6 @@ footer{
 a{
     color: white;
 }
-#black{
-  color: black;
+#order_summary{
+    margin-bottom: 10%;
 }

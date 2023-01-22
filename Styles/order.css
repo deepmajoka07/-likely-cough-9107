@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 
-    color: black;
+    color:#007ab8;
 }
 
 .mainContainer {
@@ -15,7 +15,7 @@
 
 .navigator {
     width: 20%;
-       background: rgb(0,0,0,0.9);
+       background: #007ab8;
     
     /* border: 1px solid red; */
 }
@@ -94,14 +94,18 @@
     background-color: rgb(230, 230, 230);
 }
 
-#table{
-    width:100%;
+/* #table{
+   width: 100%;
+  
 }
 
 #table_Tr {
-    font-family: Arial, Helvetica, sans-serif;
+    /* margin-top: 10px; */
+    
+    /* font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
-    width: 100%;
+    width: 70%;
+    margin: auto;
   }
   
   #table_Tr td, #table_Tr th {
@@ -116,21 +120,44 @@
   
   #table_Tr tr:hover {
     background-color:gray;
-    color: black;
+    color: #007ab8;
     
 
 }
 #table_Tr tr{
-    background-color: black;
+    background-color: #007ab8;
 }
   
   #table_Tr th {
     padding-top: 29px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: black;
+    background-color: #007ab8;
     color: white;
-  }
+  } */ 
+  table,
+td,
+th {
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  width: 90%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+th,
+td {
+  padding: 15px;
+}
+
+tr > th {
+  background-color: #007ab8;
+  color: white;
+}
 
 
 
