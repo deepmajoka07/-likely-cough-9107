@@ -11,61 +11,6 @@ function getProduct(){
     })
 }
 
-// function showData(data){
-    // Tbody.innerText = null;
-    // data.forEach((element,ind) => {
-    //     let tr = document.createElement("tr");
-    //     let td1 = document.createElement("td")
-
-    //     let id = document.createElement("p")
-    //     id.innerText = element.id;
-    //     td1.append(id)
-       
-    //     let td2 = document.createElement("td")
-    //     let img = document.createElement("p")
-    //     img.innerText = element.image_1;
-    //     td2.append(img)
-
-    //     let td3 = document.createElement("td")
-    //     let name = document.createElement("p")
-    //     name.innerText = element.title;
-    //     td3.append(name)
-
-    //     let td4 = document.createElement("td")
-    //     let Category = document.createElement("p")
-    //     Category.innerText = element.Category;
-    //     td4.append(Category)
-
-    //     let td5= document.createElement("td")
-    //     let Gender = document.createElement("p")
-    //     Gender.innerText = element.Gender;
-    //     td5.append(Gender)
-
-    //     let td6 = document.createElement("td")
-    //     let rating = document.createElement("p")
-    //     rating.innerText = element.rating;
-    //     td6.append(rating);
-
-    //     let td7 = document.createElement("td")
-    //     let price = document.createElement("p")
-    //     price.innerText = element.price
-    //     td7.append(price)
-
-    //     let td9 = document.createElement("td")
-    //     let DeleteBtn = document.createElement("p")
-    //     DeleteBtn.innerText = "Delete"
-    //     td9.append(DeleteBtn)
-
-    //     let td8 = document.createElement("td")
-    //     let edit = document.createElement("span")
-    //     edit.innerText = "Edit"
-    //     td8.append(edit)
-        
-    //     tr.append(td1,td2,td3,td4,td5,td6,td7,td8,td9);
-    //     Tbody.append(tr)
-    // });
-
-// }
 
 
 function showData(data){

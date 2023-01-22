@@ -14,6 +14,7 @@
 }
 
 .navigator {
+    /* display: none; */
     width: 20%;
     background: #007ab8;
     position: fixed;
@@ -73,7 +74,8 @@
     text-align: center;
     font-size: 3rem;
     border-bottom: 2px solid black;
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0%;
     z-index: 10;
     background-color: white;
@@ -82,7 +84,7 @@
 
 .month_Chart {
     width: 100%;
-    margin: auto;
+    /* margin: 0; */
     background-color: white;
 
 }
@@ -126,7 +128,7 @@ td:nth-child(2){
 
 input {
     border: none;
-    width: 60%;
+    width: 90%;
     font-size: 14px;
 }
 
