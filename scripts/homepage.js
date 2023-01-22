@@ -64,3 +64,9 @@ slidebar.addEventListener('focusout', () => {
 function Product(){
   window.location.href = "./product.html"
 }
+function cart(){
+  window.location.href = "./cart.html"
+}
+function signup(){
+  window.location.href = "./Signup.html"
+}
