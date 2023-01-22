@@ -1,3 +1,4 @@
+
 let G_Detail = document.getElementById("G_Detail");
 let Category_d = document.getElementById("Category_d");
 let Prod_image = document.getElementById("image");
@@ -230,10 +231,10 @@ function showDetails(data) {
     heading.innerText = "Details"
 
     let detailHead = document.createElement("h4");
-    detailHead.innerText = data.details_head;
+    detailHead.innerText = data.details_head || "NO COLD TOES";
 
     let detail = document.createElement("p");
-    detail.innerText = data.details;
+    detail.innerText = data.details|| "A thermal-reflective lining and plenty of insulation in these waterproof-breathable boots keep toes toasty all day.";
 
     box.append(title, box1, box2, quality, color, colorVal, box3, sizeError, size, sizeVal, box4, addtoCart, line, heading, detailHead, detail)
     Prod_details.append(box);
@@ -300,3 +301,4 @@ function showDetails(data) {
         }
     })
 }
+

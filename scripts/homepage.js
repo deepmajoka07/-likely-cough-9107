@@ -1,5 +1,6 @@
 
 
+
 let signin = document.getElementById("signin");
 let cartPage = document.getElementById("cartPage");
 
@@ -62,3 +63,8 @@ function responsiveSlider() {
   window.onload = function() {
     responsiveSlider();
   }
+
+
+
+  
+

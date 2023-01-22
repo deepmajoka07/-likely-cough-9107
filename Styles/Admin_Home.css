@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +16,7 @@
 
 .navigator {
     width: 20%;
-       background: #0070d2;
+       background: #007ab8;
     
     /* border: 1px solid red; */
 }
@@ -92,5 +93,3 @@
     overflow: hidden;
     border-radius: 2%;
     background-color: rgb(230, 230, 230);
-    
-}
