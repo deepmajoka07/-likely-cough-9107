@@ -157,3 +157,4 @@ function showProduct(data) {
         div.append(img,color, title, price,star1,star2,star3,star4,half_star,rate);
         container.append(div);
     });
+}

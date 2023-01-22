@@ -61,3 +61,6 @@ slidebar.addEventListener('focusout', () => {
   slidebar.style.display='none';
   console.log('hello')
 })
+function Product(){
+  window.location.href = "./product.html"
+}
