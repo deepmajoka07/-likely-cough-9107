@@ -1,0 +1,255 @@
+
+
+#upperDiv{
+    display: flex;
+   
+    height: 120px;
+
+}
+#upperDivimage{
+    
+    height: 100%;
+    width: 20%;
+}
+#upperDivimage img{
+    height: 100%;
+    width: 100%;
+}
+#upperDiv2{
+    
+    width: 79%;
+   background-color: grey;
+}
+
+
+
+
+
+
+#top {
+    height: 50px;
+    
+}
+
+#emaildiv {
+    margin: auto;
+    width: 98%;
+    
+}
+
+input {
+    border-radius: 10px;
+    height: 50px;
+}
+
+#login {
+    margin-left: 2%;
+}
+
+
+#forHeading {
+    padding-top: 4%;
+    margin: auto;
+    width: 98%;
+    
+}
+
+.identity {
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+#order {
+
+    margin-left: 50%;
+}
+
+#container {
+    display: flex;
+    
+}
+#firstDiv{
+    margin-top: 7%;
+   
+    width: 70%;
+}
+
+#inputname input{
+width: 350px;
+margin-left: 20px;
+font-size: 16px;
+}
+
+.address{
+    
+    margin: 2%;
+    width: 85%;
+    
+    display: inline-block;
+    font-size: 16px
+}
+.address input{
+    width: 100%;
+    font-size: 16px
+}
+
+#cityState input{
+    width: 350px;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+#zipCode input{
+    margin-left: 20px;
+    margin-top: 7%;
+    width: 40%;
+    font-size: 16px
+}
+#phone input{
+    margin-left: 20px;
+    margin-top: 7%;
+    width:40%;
+    font-size: 16px
+}
+
+#imagesOfBank{
+    margin: auto;
+    display: flex;
+   
+    width: 90%;
+}
+.take{
+    
+    width:100%;
+    height: 100%;
+}
+.take img{
+    width: 100%;
+}
+
+/* @media screen and (min-width: 80rem) {
+     {
+      
+    } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#order_summary{
+
+    /* position: fixed; */
+    border: 1px solid grey;
+    display: grid;
+    margin-left:1%;
+    margin-top: 5%;
+    width: 30%;
+    height:auto;
+    /* border: 2px solid black; */
+}
+#subtotal{
+    height: 100%;
+    width: 100%;
+    /* border: 2px solid yellow; */
+    margin-left:150%;
+    text-align: center;
+}
+
+#quantitys{
+    height: 100%;
+    width: 100%;
+    /* border: 2px solid orangered; */
+    margin-left: 125%;
+    text-align: right;
+}
+#priceDiv{
+    height: 100%;
+    width: 100%;
+    /* border: 2px solid blue; */
+    text-align: right;
+    margin-left:99%;
+
+}
+
+#order_summary a{
+margin-top: 7%;
+margin-left: 5%;
+}
+.upper_details{
+    height:auto;
+    margin-left:5%;
+}
+.upper_values{
+   text-align: right;
+}
+#subtotalforsummry{
+    margin-left: 60%;
+}
+#stndlv{
+    margin-left: 34%;
+    height: 0px;
+   
+}
+#esttax{
+    margin-left: 49%;
+}
+#totalestimate{
+margin-left: 40%;
+}
+#save{
+    margin-left: 60%;
+}
+#order_summary img{
+    width: 60px;
+    height: 30px;
+    margin-left: 40%;
+    margin-top: 10%;
+}
+#guestcheckout{
+    height: 40px;
+    width: 80%;
+    background-color: brown;
+    color: white;
+    font-weight: bolder;
+    margin: auto;
+}
+#accept{
+    margin-left: 23%;
+    height: 0px;
+}
+#imagesOfBank{
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns:repeat(6,1fr);
+
+}
+
+a{
+    color: black;
+}
+
+a:hover{
+    color: grey;
+}
+
+

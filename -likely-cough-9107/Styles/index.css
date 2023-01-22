@@ -1,0 +1,799 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.top {
+    width: 100%;
+    height: 45px;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-around;
+}
+
+#head{
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    z-index: 1;
+}
+
+   
+.top>div:nth-child(1) {
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+.top-left{
+    display: flex;
+    align-items: center;
+    padding: 0px 100px;
+}
+
+.top-left i{
+    position: relative;
+  display: inline-block;
+}
+.badge{
+    position: absolute;
+    top: 5px;
+    left: 7.9rem;
+    padding: 2px 6px;
+    border-radius: 50%;
+    background-color:#007ab8;
+    color: white;
+}
+.top-left>h4,i{
+    color: #3e3d3d;
+    padding: 10px;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+.top>div:nth-child(2) {
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+.top-right i {
+    float: right;
+    padding: 10px 15px;
+    size: 10px;
+    cursor: pointer;
+}
+.top-right i:hover{
+  background-color:  #3e3d3d;
+  color: white;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 90px;
+}
+
+.navbar>div:nth-child(1) {
+    width: 30%;
+    height: auto;
+    background-color: #007ab8;
+}
+
+.navbar>.logo>img{
+    margin: 10px;
+    width: 90%;
+    height: 100%;
+}
+
+.navbar>div:nth-child(2) {
+    width: 100%;
+    height: auto;
+    background-color:#333;
+
+}
+
+
+.navbar>div:nth-child(3) {
+    width: 50%;
+    height: auto;
+    background-color:#333;
+}
+
+.searchbar>.search-input{
+    width: 60%;
+    height: auto;
+    margin: 20px 120px;
+    border: 1px solid white;
+}
+
+.search-input>input{
+    width: 80%;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-family: open helvetica ,Arial, sans-serif;
+    padding: 14px 20px;
+    display: inline-block;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    background-color:#333;
+
+}
+::placeholder{
+    color: rgb(230, 216, 216);
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-family: open helvetica ,Arial, sans-serif;
+}
+.search-input>i{
+    padding: 5%;
+    color: white;
+    cursor: pointer;
+}
+
+
+/********************************** menu  ********************************/
+
+.menu-item:hover .drop-down-menu{
+    display: block;
+  }
+
+  .menu-item>a{
+    float: left;
+    cursor: pointer;
+    position: relative;
+    color: white;
+    padding: 35px 20px;
+    font-family: sans-serif;
+    font-size: 15px;
+    letter-spacing: .5px;
+    text-decoration: none;
+    /* border: 2px solid red; */
+  }
+
+
+
+
+/*************************** best_in_show_imgage ********************************/
+
+.snow-container {
+    position: relative;
+    text-align: center;
+    color: white;  
+}
+
+.snow-container>img {
+    width: 100%;
+    height: auto;  
+}
+
+.bottom-left-text {
+    position: absolute;
+    top: 30%;
+    left: 4%;
+    color: white;
+    font-size: 45px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 2px;
+    letter-spacing: -.08rem;
+    text-shadow: 0px 0px 20px #446886;
+}
+
+.shop-img-btn {
+    position: absolute;
+    top: 50%;
+    left: 4%;
+    font-size: 12px;
+    font-weight: 700;
+    color: black;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-family: open sans, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
+    margin-top: 1rem;
+    border: none;
+    background-color: white;
+    font-style: bold;
+    cursor: pointer;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+/********************************* second container for sale adv   ********************/
+
+.sale {
+
+    width: 100%;
+    height: 80vh;
+    /* border: 2px solid #2185C5; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sale-carousel{
+    width: 45%;
+    height: 70%;
+    text-align: center;
+    /* border: 3px solid red; */
+}
+.sale-carousel>h2{
+    font-size: 30px;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+.sale-carousel>p{
+  font-size: 15px;
+  font-family: sans-serif;
+}
+.sale-carousel>button{
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    margin-top: 1rem;
+    border: none;
+    background-color: #000;
+    font-style: bold;
+    cursor: pointer;
+    margin-left: 12%;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+/***************************** .Get Ready For Winter************************************************/
+.container {
+  width: 100%;
+  height: 550px;
+  position: relative;
+  overflow: hidden;
+  
+}
+.container>h2{
+  font-size: 1.4rem;
+  font-family: bold, sans-serif;
+    color: #000;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    
+}
+
+.container>ul {
+  width: 9999%;
+  height: 100%;
+  list-style: none;
+  position: relative;
+  transition: all 0.75s ease;
+  
+}
+
+.container>ul>li {
+  
+  width: 26.66vw;
+  height: 70%;
+  margin-left:40px;
+  float: left;
+
+}
+li>img{
+ /* border: 3px solid green; */
+  width: 98%;
+  height: 90%;
+}
+li>h4{
+  text-align: center;
+  color: #000;
+  font-size: 15px;
+  font-family: sans-serif;
+}
+
+#prev,
+#next {
+  position: absolute;
+  top: 50%;
+  color: #aaa;
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 5px 3px;
+  background: white;
+  text-align: center;
+  transform: translateY(-50%);
+  transition: all 0.15s ease;
+  border: 1px solid #ddd;
+  border-radius: 0 3px 3px 0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+#prev:hover,
+#next:hover {
+  color: #888;
+}
+
+
+/*************************** Get Rewards on Every Purchase **********************/
+
+.adverties {
+    width: 100%;
+    height: 50vh;
+    /* border: 2px solid red; */
+    text-align: center;
+}
+
+.adverties>img {
+    margin-top: 3%;
+    width: 20%;
+    height: 12%;
+}
+
+.adverties>h2 {
+    font-size: 2.5rem;
+    font-family: bold, sans-serif;
+
+}
+
+.adverties>p {
+    font-family: Arial, sans-serif;
+    font-size: .875rem;
+    font-weight: 400;
+}
+
+.adverties button {
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+/***************************************** Need The Right Jacket ************************************/
+.jacket {
+    margin: auto;
+    margin-top: 40px;
+    width: 100%;
+    height: 80vh;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jacket img {
+    width: 90%;
+    height: 100%;
+    /* border: 3px solid red; */
+}
+
+.right-jacket {
+    width: 100%;
+    height: 60vh;
+    /* border: 2px solid red; */
+    text-align: center;
+}
+.right-jacket>h2 {
+    font-size: 2.5rem;
+    font-family: bold, sans-serif;
+
+}
+
+.right-jacket>p {
+    font-family: Arial, sans-serif;
+    font-size: .875rem;
+    font-weight: 400;
+}
+
+.right-jacket button {
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+
+/*********************** Featured Favorites  ********************************/
+
+.title, .play{
+    font-size: 1.5rem;
+    font-family: bold, sans-serif;
+}
+
+.favorites{
+    width: 90%;
+    height: auto;
+    margin-left: auto;
+    align-items: center;
+    /* border: 3px solid red; */
+    margin: 15px auto;
+}
+
+.featured-favorites-container>img{
+    width: 100%;
+}
+
+.featured-favorites-container,.men, .women {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.cold {
+    position: absolute;
+    top: 85%;
+    left: 2%;
+    color: white;
+    font-size: 22px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 2px;
+    letter-spacing: -.08rem;
+    text-shadow: 0px 0px 20px #446886;
+}
+#cold{
+     position: absolute;
+     top: 90%;
+    left: 2%;
+     color: white;
+     border-bottom: 1px solid white;
+     font-family: sans-serif;
+     font-size: 15px;
+}
+
+.men-women{
+   width: 90%;
+    height: 80vh;
+    margin-left: auto;
+    align-items: center;
+    /* border: 3px solid red; */
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.men-women img{
+    width: 100%;
+    height: 100%;
+}
+.men-women>.men{
+    width: 100%;
+    height: 100%;
+}
+.men-women>.women{
+    width: 100%;
+    height: 100%;
+}
+#link{
+    position: absolute;
+    top: 90%;
+   left: 2%;
+    color: white;
+    border-bottom: 1px solid white;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+/******************************************** How Do You Play? *****************************************/
+
+.play{
+    width: 90%;
+    height: 70vh;
+    margin: auto;
+    margin-top: 8%;
+    /* border: 3px solid red; */
+}
+.play-img>div>img{
+    width: 100%;
+    height: 100%;
+}
+.play-img{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    /* border: 2px solid green; */
+}
+.play-img>div:nth-child(1){
+   width: 100%;
+   height: 100%;
+    /* border: 2px solid firebrick; */
+}
+.fishing, .hiking, .hunting, .skisnow{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.fishing h3, .hiking h3, .hunting h3, .skisnow h3{
+    position: absolute;
+    top: 80%;
+    left: 6%;
+    color: white;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.play-img>div:nth-child(2){
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid firebrick; */
+}
+.play-img>div:nth-child(3){
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid firebrick; */
+}
+.play-img>div:nth-child(4){
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid firebrick; */
+}
+
+/* ****************“Nature. The world’s largest playground.”  *************************/
+
+  .nature-div{
+    width: 90%;
+    height: 70vh;
+    margin: auto;
+    align-items: center;
+    /* border: 2px solid green; */
+  }
+  .nature{
+    margin: 25vh;
+    font-size: 3rem;
+    font-family: bold,sans-serif;
+    color: #0085ca;
+    text-align: center;
+    font-weight: 700;
+    /* border: 2px solid red; */
+  }
+  .name{
+    margin-top: -150px;
+    text-align: center;
+    /* border: 2px solid red; */
+  }
+  .name>p{
+    font-family: bold,sans-serif;
+  }
+  .founder{
+    font-size: 12px;
+    font-weight: 700;
+    font-family: bold,sans-serif;
+  }
+
+  /************************************* Explore Best Sellers   **********************************/
+  .explore{
+    width: 90%;
+    height: 80vh;
+    margin: auto;
+    background-color: #446886;
+  }
+
+  /************************************* See you out there. *****************************/
+
+  .planet {
+    width: 99%;
+    position: relative;
+    height: 120vh;
+    text-align: center;
+    color: white;
+    /* border: 1px solid red; */
+  }
+
+  .planet>img{
+    width: 100%;
+    height: 100%;
+  }
+  .see-you{
+    width: 100%;
+    height: 5%;
+    position: absolute;
+    top: 10%;
+    /* border: 2px solid red; */
+    color: white;
+    font-size: 45px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: -.08rem;
+  }
+  .grid-template{
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    top: 25%;
+    /* border: 2px solid red; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+  }
+  .grid-template>div{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+  }
+
+  .grid-template>div>img{
+    width: 100%;
+    height: 60%;
+  }
+  .grid-template>div>p{
+    color: black;
+    text-align: left;
+    margin-left: 10%;
+    font-family: sans-serif;
+
+  }
+  .grid-template>div a{
+    color: black;
+    text-align: left;
+    margin-left: -45%;
+  }
+
+
+
+
+
+  /************************************* contact section *****************************/
+  .contact{
+    width: 98%;
+    height: 35vh;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    /* border: 2px solid red; */
+  }
+  .contact>.contact-care, .customer-care, .git, .store{
+    width: 100%;
+    height: auto;
+    font-family: sans-serif;
+    letter-spacing: .5px;
+    text-align: center;
+    margin: 10px;
+    /* border: 2px solid red; */
+  }
+
+  /************************************* footer  ***********************************/
+
+  footer{
+    width: 99%;
+    height: auto;
+    background-color: #333;
+    
+  }
+  .footer-top{
+    width: 100%;
+    height: 30vh;
+    text-align: center;
+    /* border: 2px solid red; */
+  }
+  .footer-top>img{
+    margin-top: 3%;
+  }
+  .join{
+    color: white;
+    font-size: .875rem;
+    font-weight: bold;
+    font-family: sans-serif;
+  }
+  .footer-top>p{
+    color: #fff;
+    font-family: sans-serif;
+    font-size: .875rem;
+    letter-spacing: 0.9px;
+  }
+  .grid-footer{
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    /* border: 2px solid blue; */
+  }
+  .grid-footer>div:nth-child(1){
+    width: 60%;
+    height: auto;
+    /* border: 2px solid red; */
+    color: white;
+  }
+  .grid-footer>div:nth-child(2){
+    width: 60%;
+    height: auto;
+    /* border: 2px solid red; */
+    color: white;
+  }
+  .grid-footer>div:nth-child(3){
+    width: 100%;
+    height: auto;
+    /* border: 2px solid red; */
+    color: white;
+  }
+
+  .aboutus>ul li, .shop>ul li{
+    color: #fff;
+    list-style: none;
+    font-family: sans-serif;
+    font-size: .875rem;
+    line-height: 2rem;
+    cursor: pointer;
+  }
+
+  .connectus>p{
+    color: #fff;
+    margin: 20px 40px;
+    font-family: sans-serif;
+  }
+  .email-container{
+    width: 90%;
+    height: 10%;
+    margin: auto;
+    background-color: #fff;
+    text-align: center;
+  }
+
+  .email-container>.email-input{
+    background-color: white;
+}
+
+.email-input>i{
+    padding: 15px 10px;
+    color: black;
+    cursor: pointer;
+}
+.email-input>a{
+    padding: 10px 17px;
+    font-size: 36px;
+    background-color: #eaebed;
+}
+
+.email-input>input[type=text]{
+    width: 75%;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-family: open helvetica ,Arial, sans-serif;
+    padding: 14px 20px;
+    display: inline-block;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    background-color:white;
+
+}
+.email-input>::placeholder{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.social-media-icon{
+    width: 60%;
+    height: auto;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    color: white;
+    cursor: pointer;
+    /* border: 2px solid red; */
+}
+
+.social-media-icon>i{
+    color: white;
+    font-size: 20px;
+}
+a{
+    color: white;
+}
