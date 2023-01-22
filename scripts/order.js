@@ -11,9 +11,12 @@ fetch ("https://colambia-api.onrender.com/Orders")
 
 let table=document.getElementById("table_details")
 
-
+let arr=[1,2,3];
+console.log(arr.length);
 function creatingTable(data){
+    console.log(data);
    for (let i=0;i<data.length;i++){
+       console.log(data[i].cart_data);
     var rows=
     `
    <tr>

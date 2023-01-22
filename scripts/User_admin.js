@@ -59,5 +59,9 @@ async function  deleteData(id){
       headers: {
         'Content-type': 'application/json'
     }
+    }).then((res)=>{
+        res.json
+    }).then((data)=>{
+        console.log(data);
     })
 }

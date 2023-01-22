@@ -1,18 +1,29 @@
 let id="";
 // let Email=document.getElementById("v-email").value;
-let pass=document.getElementById("N-password").value
+
 console.log(Email);
 async function getId(){
     let res=await fetch("https://colambia-api.onrender.com/users")
    let data=await res.json();
+   console.log(data);
      data.map((el)=>{
-                if(el.email===email){
+        console.log(id);
+                if(el.email=="jasveerkour31@gmail.com"){
                     id=el.id;
+                    console.log(id);
                 }
      })
 }
 getId()
-async function updatePass(){
+document.getElementById("updatepassword").addEventListener("click",(e)=>{
+    e.preventDefault();
+    console.log(id);
+    let pass=document.getElementById("N-password").value
+    updatePass(pass)
+})
+async function updatePass(pass){
+ 
+   
     let res=await fetch(`https://colambia-api.onrender.com/users/${id}`,{
         method:'PATCH',
         headers: {
@@ -20,12 +31,12 @@ async function updatePass(){
             
           },
           body:JSON.stringify({
-              "password":pass
+              "Password":pass
           })
     }).then((result)=>{
         result.json
     }).then(data=>{console.log(data);
-        window.location.href = "./User_Admin.html";
+        window.location.href = "./Signup.html";
     })
-
+ 
 }

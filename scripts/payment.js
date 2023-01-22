@@ -21,7 +21,7 @@ payBtn.addEventListener("click", () => {
     setTimeout(() => {
       added.style.display = "none";
       localStorage.clear();
-      window.location.href = "./index.html"
+      window.location.href = "./product.html"
     }, 2000)
   }
 })

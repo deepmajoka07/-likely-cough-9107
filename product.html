@@ -23,8 +23,8 @@
 
             </div>
             <div class="top-right">
-                <i class="fa-solid fa-cart-shopping" style="font-size: 22px;"></i>
-                <i class="fa-solid fa-circle-user" style="font-size: 22px;"></i>
+                <i class="fa-solid fa-cart-shopping" onclick="cart()"  style="font-size: 22px;"></i>
+                <i class="fa-solid fa-circle-user" onclick="signup()" style="font-size: 22px;"></i>
                 <i class="fa-solid fa-location-dot" style="font-size: 22px;"></i>
                 <i class="fa-solid fa-circle-question" style="font-size: 22px;"></i>
             </div>
@@ -33,21 +33,21 @@
         <!------------------------------------- navigation bar  ------------------------------------------>
         <div class="navbar">
             <div class="logo">
-                <img src="./images/logo.png" alt="">
+                <img src="./images/logo.png" alt="" onclick="home()">
             </div>
             <div>
                 <div id="menu">
                     <div class="menu">
                         <div class="menu-item">
-                            <a href="">Men</a>
+                            <a href="./men.html">Men</a>
                         </div>
 
                         <div class="menu-item">
-                            <a href="">Women</a>
+                            <a href="./women.html">Women</a>
                         </div>
 
                         <div class="menu-item">
-                            <a href="">Kids</a>
+                            <a href="./kids.html">Kids</a>
                         </div>
 
                         <div class="menu-item">
@@ -302,3 +302,14 @@
 <script src="./scripts/product.js"></script>
 
 </html>
+<script>
+    function home(){
+        window.location.href="./index.html"
+    }
+    function cart(){
+  window.location.href = "./cart.html"
+}
+function signup(){
+  window.location.href = "./Signup.html"
+}
+</script>

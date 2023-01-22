@@ -70,3 +70,6 @@ function cart(){
 function signup(){
   window.location.href = "./Signup.html"
 }
+function home(){
+  window.location.href = "./index.html"
+}
