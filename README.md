@@ -26,7 +26,7 @@ Start the server
   npm run start
 ```
 ## Support
-![App Screenshot](shorturl.at/CHNU9)
+![App Screenshot](shorturl.at/CEPV1)
 For support, email -gentalman1945@gmail.com 
 ## Screenshots
 ## Contributing
