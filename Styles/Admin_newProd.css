@@ -109,6 +109,13 @@ form>div{
 #submit{
     width: 95%;
     margin-left: 0;
+    background: #007ab8;
+    color: white;
+    cursor: pointer;
+}
+#submit:active{
+    background-color: white;
+    color: black;
 }
 input{
     width: 70%;
@@ -140,6 +147,21 @@ form>div:nth-child(11)>input{
 }
 form input:focus{
     outline: #007ab8;
-    border: #007ab8;
-    box-shadow: rgba(0,122,184, 0.24) 0px 3px 8px;
+    border: none;
+    /* box-shadow: rgba(0,122,184, 0.24) 0px 3px 8px; */
+    box-shadow: rgba(0,122,184, 0.4) 0px 0px 0px 2px, rgba(0,122,184, 0.65) 0px 4px 6px -1px, rgba(0,122,184, 0.08) 0px 1px 0px inset;
+}
+
+.notification{
+    display: none;
+    position: fixed;
+    top: 8%;
+    left: 45%;
+    width: 17%;
+    font-size: 23px;
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+    background: rgba(0,0,0,0.8);
+    color: white;
 }

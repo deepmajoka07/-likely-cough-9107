@@ -92,7 +92,8 @@ function showProduct(data) {
         img.setAttribute("src", element.image_1);
 
         let details = document.createElement("p");
-        details.innerText = element.details.substring(0, 80);
+        element.details = element.details || "A thermal-reflective lining and plenty of insulation in these waterproof-breathable boots keep toes toasty all day."
+        details.innerText = element.details.substring(0, 80) ;
         
         let title = document.createElement("p")
         title.innerText = element.title;
