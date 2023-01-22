@@ -69,7 +69,34 @@
     ],
     "Orders" : [
         {
-            "id" : 1
+            "Name": "Aman ",
+            "Email_Id": "Aman3@gmail.com",
+            "Mob_No": "9849574985",
+            "Address": "paryagraj",
+            "Zip_code": "244715",
+            "Order_Id": 120044,
+            "Date": "22/1/2023",
+            "id": 1
+        },
+        {
+            "Name": "Ramanjeet ",
+            "Email_Id": "Ramanjeet@gmail.com",
+            "Mob_No": "9849574985",
+            "Address": "Haryana",
+            "Zip_code": "244715",
+            "Order_Id": 120045,
+            "Date": "22/1/2023",
+            "id": 2
+        },
+        {
+            "Name": "Depak ",
+            "Email_Id": "deepak@gmail.com",
+            "Mob_No": "9849574966",
+            "Address": "Haryana",
+            "Zip_code": "244715",
+            "Order_Id": 120046,
+            "Date": "22/1/2023",
+            "id": 3
         }
     ],
     "AllProduct": [
