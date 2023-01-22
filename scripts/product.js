@@ -1,3 +1,4 @@
+
 let container = document.getElementById("Product_Container")
 let Jackets = document.getElementById("Jackets")
 let Pants = document.getElementById("Pants")
@@ -156,4 +157,3 @@ function showProduct(data) {
         div.append(img,color, title, price,star1,star2,star3,star4,half_star,rate);
         container.append(div);
     });
-}

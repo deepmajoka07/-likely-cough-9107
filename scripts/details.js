@@ -1,3 +1,4 @@
+
 let G_Detail = document.getElementById("G_Detail");
 let Category_d = document.getElementById("Category_d");
 let Prod_image = document.getElementById("image");
@@ -300,3 +301,4 @@ function showDetails(data) {
         }
     })
 }
+
