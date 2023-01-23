@@ -160,3 +160,17 @@ input[type="text"]:disabled {
 .delete:active{
     background-color: rgb(250, 250, 250);
 }
+
+.notification{
+    display: none;
+    position: fixed;
+    top: 8%;
+    left: 45%;
+    width: 17%;
+    font-size: 23px;
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+    background: rgba(0,0,0,0.8);
+    color: white;
+}

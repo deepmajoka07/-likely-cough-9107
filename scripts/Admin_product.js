@@ -108,3 +108,12 @@ function getCard(id,imgURL,title,Category,Gender,rating,price){
     `
 }
 
+let logout=document.getElementById("out")
+let log=document.getElementById("logout");
+log.addEventListener("click",()=>{
+    logout.style.display = "inline"
+    setTimeout(() => {
+        logout.style.display = "none";
+        window.open("./index.html")
+    }, 2000)
+})
