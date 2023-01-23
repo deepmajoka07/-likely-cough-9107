@@ -13,7 +13,7 @@ let table=document.getElementById("table_details")
 
 function creatingTable(data){
     console.log(data);
-   for (let i=1;i<data.length;i++){
+   for (let i=0;i<data.length;i++){
        console.log(data[i].cart_data);
     var rows=
     `
