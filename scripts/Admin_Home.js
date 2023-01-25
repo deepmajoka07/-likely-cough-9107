@@ -53,3 +53,12 @@ function showGraph() {
         chart.draw(data, options);
     }
 }
+let logout=document.getElementById("out")
+let log=document.getElementById("logout");
+log.addEventListener("click",()=>{
+    logout.style.display = "inline"
+    setTimeout(() => {
+        logout.style.display = "none";
+        window.open("./index.html")
+    }, 2000)
+})
