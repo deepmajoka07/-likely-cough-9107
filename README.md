@@ -1,6 +1,5 @@
-#Mountain Wear
-## Clone of Columbia.com
-[Visit here](https://sunny-pudding-42afd8.netlify.app/)
+# Mountain Wear
+## Clone of Columbia.com [Visit here](https://sunny-pudding-42afd8.netlify.app/)
 
 It is a clone of American based sportswear company [Columbia.com](https://www.columbia.com/) which sells all kind of sportswar clothes for Men, Women and Children.
 
