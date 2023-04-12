@@ -47,7 +47,7 @@ Start the server
 ![footer](https://user-images.githubusercontent.com/113422735/231577958-3aa2e769-dabe-441c-a302-8a4906f03d46.png)
 
 
-## Admin Pamel
+## Admin Pannel
 
 ![chart](https://user-images.githubusercontent.com/113422735/231577942-f03b7b2b-c29f-4ad0-8711-9495d35a1cca.png)
 
