@@ -42,7 +42,8 @@ Start the server
 
 ![cart](https://user-images.githubusercontent.com/113422735/231577838-d1366163-1f7e-4df5-bad7-bf6deb4012de.png)
 
-![payment](https://user-images.githubusercontent.com/113422735/231577883-d19eb37f-2e91-4625-b0ba-a74cc29f6955.png)
+![card](https://user-images.githubusercontent.com/113422735/231579987-8e08ecfe-601b-47c1-9c1f-1fa60561e7d9.png)
+
 
 ![footer](https://user-images.githubusercontent.com/113422735/231577958-3aa2e769-dabe-441c-a302-8a4906f03d46.png)
 
