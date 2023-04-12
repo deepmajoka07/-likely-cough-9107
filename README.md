@@ -1,14 +1,17 @@
 #Mountain Wear
+## Clone of Columbia.com
+[Visit here](https://sunny-pudding-42afd8.netlify.app/)
 
-Its a web application that provides a platform to buy fashion clothes products.It a user friendly E Commerce Website.
-[Click here to visit website](https://sunny-pudding-42afd8.netlify.app/)
+It is a clone of American based sportswear company [Columbia.com](https://www.columbia.com/) which sells all kind of sportswar clothes for Men, Women and Children.
+
+
 
 ## Tech Stack
-**Client:** Html ,Css,JavaScript
-**Client Server Api:** Local Storage,Smtp Service.
+**Client:** Html , Css, JavaScript 
+**Client Server Api:** Local Storage, SMTP Service.
 
 ## 🛠 Skills
-Javascript, HTML, CSS...
+Javascript, HTML, CSS, Rest API
 
 
 ## Run Locally
@@ -65,7 +68,6 @@ Contributions are always welcome!
 - [Deepak Rajput](https://github.com/deepmajoka07)
 - [Ramanjeet Singh](https://github.com/gzbsingh)
 - [Anand Kumar](https://github.com/Anandkr21)
-- [Ramanjeet Singh](https://github.com/gzbsingh)
 - [Aman Maurya](https://github.com/Amanmauryacode)
 - [Mohit Negi](https://github.com/MOHITNEGI16)
 
@@ -78,13 +80,14 @@ Contributions are always welcome!
 - Filter by product
 - Fullscreen mode
 - Cross platform
+- 
 ## FAQ
 
-#### Which Api you use for database
+### Which Api you use for database?
 
-Web local storage Api,Json Server
+Web local storage, Api, Json Server
 
-#### Did you use bootstrap for style
+### Did you use bootstrap for style?
 
 No
 
